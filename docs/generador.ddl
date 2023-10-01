@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2023-10-01 14:57:19 COT
+--   en:        2023-10-01 15:52:13 COT
 --   sitio:      Oracle Database 21c
 --   tipo:      Oracle Database 21c
 
@@ -23,28 +23,27 @@ ALTER TABLE cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( cliente_id );
 
 CREATE TABLE consumo (
     cuenta_habitacion_id NUMBER NOT NULL,
-    servicio_id          NUMBER NOT NULL
+    servicio_id          NUMBER NOT NULL,
+    cuenta_reserva_id    NUMBER NOT NULL
 );
 
 ALTER TABLE consumo ADD CONSTRAINT consumo_pk PRIMARY KEY ( cuenta_habitacion_id,
                                                             servicio_id );
 
 CREATE TABLE cuenta (
-    reserva_id             NUMBER NOT NULL,
-    reserva_planconsumo_id NUMBER NOT NULL,
-    total                  NUMBER,
-    descripcion            VARCHAR2(255 BYTE),
-    habitacion_id          NUMBER NOT NULL
+    reserva_id    NUMBER NOT NULL,
+    total         NUMBER,
+    descripcion   VARCHAR2(255 BYTE),
+    habitacion_id NUMBER NOT NULL
 );
 
 CREATE UNIQUE INDEX cuenta__idx ON
     cuenta (
         reserva_id
-    ASC,
-        reserva_planconsumo_id
     ASC );
 
-ALTER TABLE cuenta ADD CONSTRAINT cuenta_pk PRIMARY KEY ( habitacion_id );
+ALTER TABLE cuenta ADD CONSTRAINT cuenta_pk PRIMARY KEY ( reserva_id,
+                                                          habitacion_id );
 
 CREATE TABLE gimnasio (
     capacidad   INTEGER,
@@ -151,7 +150,8 @@ CREATE TABLE reservasalon (
     dia                  VARCHAR2(255 BYTE),
     duracion             INTEGER,
     salon_id             NUMBER NOT NULL,
-    cuenta_habitacion_id NUMBER NOT NULL
+    cuenta_habitacion_id NUMBER NOT NULL,
+    cuenta_reserva_id    NUMBER NOT NULL
 );
 
 ALTER TABLE reservasalon ADD CONSTRAINT reservasalon_pk PRIMARY KEY ( cuenta_habitacion_id,
@@ -162,7 +162,8 @@ CREATE TABLE ReservaSpa (
     horainicio VARCHAR2(255 BYTE),
     dia VARCHAR2(dia BYTE),
     spa_id NUMBER NOT NULL,
-    cuenta_habitacion_id NUMBER NOT NULL
+    cuenta_habitacion_id NUMBER NOT NULL,
+    cuenta_reserva_id NUMBER NOT NULL
 ) 
 ;
 
@@ -209,6 +210,7 @@ ALTER TABLE tienda ADD CONSTRAINT tienda_pk PRIMARY KEY ( tienda_id );
 
 CREATE TABLE tipohabitacion (
     id          NUMBER NOT NULL,
+    tipo        VARCHAR2(255 BYTE),
     descripcion VARCHAR2(255 BYTE),
     precio      NUMBER,
     capacidad   INTEGER
@@ -239,8 +241,10 @@ ALTER TABLE cliente
         REFERENCES usuario ( id );
 
 ALTER TABLE consumo
-    ADD CONSTRAINT consumo_cuenta_fk FOREIGN KEY ( cuenta_habitacion_id )
-        REFERENCES cuenta ( habitacion_id );
+    ADD CONSTRAINT consumo_cuenta_fk FOREIGN KEY ( cuenta_reserva_id,
+                                                   cuenta_habitacion_id )
+        REFERENCES cuenta ( reserva_id,
+                            habitacion_id );
 
 ALTER TABLE consumo
     ADD CONSTRAINT consumo_servicio_fk FOREIGN KEY ( servicio_id )
@@ -295,16 +299,20 @@ ALTER TABLE reserva
         REFERENCES planconsumo ( id );
 
 ALTER TABLE reservasalon
-    ADD CONSTRAINT reservasalon_cuenta_fk FOREIGN KEY ( cuenta_habitacion_id )
-        REFERENCES cuenta ( habitacion_id );
+    ADD CONSTRAINT reservasalon_cuenta_fk FOREIGN KEY ( cuenta_reserva_id,
+                                                        cuenta_habitacion_id )
+        REFERENCES cuenta ( reserva_id,
+                            habitacion_id );
 
 ALTER TABLE reservasalon
     ADD CONSTRAINT reservasalon_salon_fk FOREIGN KEY ( salon_id )
         REFERENCES salon ( id );
 
 ALTER TABLE reservaspa
-    ADD CONSTRAINT reservaspa_cuenta_fk FOREIGN KEY ( cuenta_habitacion_id )
-        REFERENCES cuenta ( habitacion_id );
+    ADD CONSTRAINT reservaspa_cuenta_fk FOREIGN KEY ( cuenta_reserva_id,
+                                                      cuenta_habitacion_id )
+        REFERENCES cuenta ( reserva_id,
+                            habitacion_id );
 
 ALTER TABLE reservaspa
     ADD CONSTRAINT reservaspa_spa_fk FOREIGN KEY ( spa_id )
