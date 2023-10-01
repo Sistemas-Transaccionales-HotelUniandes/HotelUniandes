@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="habitacion_tipohabitacion_fk" directorySegmentName="seg_0" id="20F18732-5F59-637F-F007-6EA47DBBFC01">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>B8E08C3C-98E7-E0AD-6F3D-4644C9954F9F</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<sourcePk>D5D37CA2-2678-70E6-02F6-DBE00DE95826</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4F91CCD8-621A-D2B7-D1D5-CA6C75FB46F2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0DC067DD-773F-6510-EF0D-577A88F6EB15</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

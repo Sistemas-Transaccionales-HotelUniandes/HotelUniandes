@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="gimnasio_servicio_fk" directorySegmentName="seg_0" id="115C9E13-5D4B-B9BB-38FD-B9E96198536E">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>65F32CC2-8655-CDE2-BAC5-CFB334B341B6</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<sourcePk>9CB7A09D-44E8-C702-2BC9-CFA82F6B2987</sourcePk>
+<dominantRole>C7869906-E16E-900D-D2D9-4F49B6304C8A</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C7869906-E16E-900D-D2D9-4F49B6304C8A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0FE977DE-E93D-5BBF-7B2C-BE3519BC4D78</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

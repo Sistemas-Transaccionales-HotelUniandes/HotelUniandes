@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="2E3DDD48-22C1-003F-7072-16C08AC4313C" mainViewID="A935DF9B-1E8F-B880-45E0-71B31FAEDE1E">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:02:42 UTC</createdTime>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>generador.ddl</fileName>
+<pathName>C:\Users\57313\Documents\Andes\cuarto\Sis Trans\HotelUniandes\docs</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

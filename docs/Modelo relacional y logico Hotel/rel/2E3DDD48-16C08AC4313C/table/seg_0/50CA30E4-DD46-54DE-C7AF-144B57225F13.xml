@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50CA30E4-DD46-54DE-C7AF-144B57225F13" name="consumo">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>1C151470-32FE-7B12-EE6E-F341BC016EBE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cuenta_habitacion_id" id="31906402-898D-9781-6BED-9F4778C91CDA">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>C6887ED5-B49D-B88C-F6BF-8632E00589FA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93E98CBF-2B08-78EA-DDE8-D67EA6634AE5" referredColumn="FF9FD4C4-4534-9FB3-A383-86C45D18152B"/>
+</associations>
+</Column>
+<Column name="servicio_id" id="00F076EF-1105-38D3-AE17-3FC7135C9030">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>812CA472-2488-6D89-C76E-BB6E11BC1C00</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED25E56A-1C72-C4AC-FB7A-AF306D97F906" referredColumn="3903030C-A178-32E2-967E-94471B5F049D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E102A383-078B-70D6-8C0C-25DCF05AE4D7" name="consumo_pk">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>E4097281-595F-E473-7A23-A01EDFC00EE9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31906402-898D-9781-6BED-9F4778C91CDA"/>
+<colUsage columnID="00F076EF-1105-38D3-AE17-3FC7135C9030"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="119778D5-3041-40B2-09BB-F1F10455A85E" name="consumo_cuenta_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31906402-898D-9781-6BED-9F4778C91CDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD2D43D5-07F0-EAB9-C0AE-896ADFD5A545" name="consumo_servicio_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00F076EF-1105-38D3-AE17-3FC7135C9030"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

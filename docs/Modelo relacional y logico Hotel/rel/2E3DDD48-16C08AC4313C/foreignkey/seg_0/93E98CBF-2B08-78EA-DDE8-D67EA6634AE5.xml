@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="93E98CBF-2B08-78EA-DDE8-D67EA6634AE5" containerWithKeyObject="50CA30E4-DD46-54DE-C7AF-144B57225F13" localFKIndex="119778D5-3041-40B2-09BB-F1F10455A85E" name="consumo_cuenta_fk">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>A049A5A8-4B3D-81E5-D9B8-8BAE464DD379</importedID>
+<referredTableLongName>cuenta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A95BF84B-5FB7-9161-878B-81EF71AAFEB1</referredTableID>
+<keyObject>7A263946-5EF1-9774-43C0-B70AD727FE68</keyObject>
+<referredKeyID>7A263946-5EF1-9774-43C0-B70AD727FE68</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>habitacion_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
