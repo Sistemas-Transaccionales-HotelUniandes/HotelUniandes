@@ -1,9 +1,0 @@
-Explicacion UML:
-
-Primer dato: El tipo de la Tienda solo puede ser Joyeria o Supermercado
-Segundo dato: El tipo de Local solo puede ser Bar o Restaurante
-Tercer dato: El tipo de Salon solo puede ser Reunion o Conferencia y cuando sea Conferencia el costoAdicional es igual a 0
-Cuarto dato: La clase ReservaSpa y ReservaSalon son clases de la relacion entre Spa o Salon, y Cuenta
-Quinto dato: En reserva se guarda el Fk de Cliente
-Sexto dato: En la clase tipo usuario, el tipo puede ser: Cliente, Recepcionista, Empleado, Administrador o Gerente
-Septimo dato: En la clase TipoHabitacion, el tipo puede ser: Suit-Presidencial, Suit, Familiar, Doble o Sencilla.
