@@ -8,6 +8,10 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
+/**
+ * This class represents a user in the system.
+ * It contains the user's id, name, email, type of document, document number and user type.
+ */
 @Entity
 @Table(name = "usuario")
 public class Usuario {
@@ -21,7 +25,7 @@ public class Usuario {
     private String documento;
 
     @ManyToOne
-    @JoinColumn(name = "tipo_usuario", referencedColumnName = "id")
+    @JoinColumn(name = "tipoUsuario", referencedColumnName = "id")
     private TipoUsuario tipoUsuario;
 
     public Usuario() {;}
