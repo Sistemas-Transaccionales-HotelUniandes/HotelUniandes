@@ -1,4 +1,4 @@
-package main.java.uniandes.edu.co.app.model;
+package uniandes.edu.co.app.model;
 
 import java.lang.annotation.Inherited;
 
