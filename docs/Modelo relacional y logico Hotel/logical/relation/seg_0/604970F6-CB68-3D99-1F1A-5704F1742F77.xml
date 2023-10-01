@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="producto_tienda_fk" directorySegmentName="seg_0" id="604970F6-CB68-3D99-1F1A-5704F1742F77">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>71165663-7D53-CDDE-439B-65E585947416</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<sourcePk>F76F0C7B-E76B-3812-C732-137FFD74E318</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7958FFC8-8DF7-F428-E41A-E0BFA03C52DF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8C46EAE2-578B-2096-2CF1-54B603289706</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

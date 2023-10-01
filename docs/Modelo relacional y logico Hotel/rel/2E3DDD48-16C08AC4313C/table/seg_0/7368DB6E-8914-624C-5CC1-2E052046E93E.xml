@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7368DB6E-8914-624C-5CC1-2E052046E93E" name="reservasalon">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>A1E56024-4842-7973-5FF1-1E16EE906DCD</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="horainicio" id="78986EFC-1258-F9E0-898B-78192E9C8878">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>8B772281-A236-8EA2-FFFE-7E74702ED313</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia" id="9244538C-5A9B-FFC0-7E7C-7132070965F6">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>6C5E85EE-A2F0-C236-6BAF-08494192EA51</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duracion" id="B9B0CAE4-0CCC-4F70-B7C8-9196C48D03D8">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>A47E6820-2233-BB93-FA2A-6DE5583F263B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>02B3CEF3-74CB-4FE3-CDC9-E1494A712ACA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salon_id" id="6C4AE52C-2715-E652-9652-76876094FC94">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>6AEED7CE-80A1-FCCF-0B69-E68EDCFA18FE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E380D1B-B087-FBBB-3500-F6C94E8B587C" referredColumn="A0F35E89-9E31-A9EF-18DD-4EF134D2C67D"/>
+</associations>
+</Column>
+<Column name="cuenta_habitacion_id" id="1A008D78-DA51-623D-E02E-F91D2B728D05">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>997E18A7-EB87-101F-F1C3-C9463E44724A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3F39E50-86B3-BC10-D8D5-E2C41CCE48D1" referredColumn="FF9FD4C4-4534-9FB3-A383-86C45D18152B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0BDA77A-DEDB-A893-F11B-1765DF107CC9" name="reservasalon_pk">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>4F9A476E-785C-83F7-DC39-54AAFA0CFA9E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A008D78-DA51-623D-E02E-F91D2B728D05"/>
+<colUsage columnID="6C4AE52C-2715-E652-9652-76876094FC94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFDB3D05-CEFB-688A-4603-A01817F7053C" name="reservasalon_cuenta_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A008D78-DA51-623D-E02E-F91D2B728D05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="823E60DA-8373-1C8B-32D5-AC556F4BB4AE" name="reservasalon_salon_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C4AE52C-2715-E652-9652-76876094FC94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

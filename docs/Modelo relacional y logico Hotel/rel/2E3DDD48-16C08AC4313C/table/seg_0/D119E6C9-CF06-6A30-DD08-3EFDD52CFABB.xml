@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D119E6C9-CF06-6A30-DD08-3EFDD52CFABB" name="usuario">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>7F482987-DF50-973C-31CA-7F482F65D56B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="00F019F2-F0A6-E7B3-744E-8B8D4DCCE2AE">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>266DCF24-EDE4-33CA-3CAD-A14E3C74BC91</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="5D6B0CED-943C-0883-1F13-357E0A3D0875">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>8823868E-9EF4-26EE-7BBA-469EBEC9C0C9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="0456992F-BCA1-909B-4B1A-653D0DEAA7AC">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>0C858DAC-2489-04B6-BD5B-9518C02FEEAD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="documento" id="318A0903-D8E5-50F0-3FB0-AAD9C2E2CECA">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>2B852A78-2EF0-14C4-2D2A-9DCF7F651A67</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipodocumento" id="DC1D0660-18B0-619A-0A3D-77501E13D1C9">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>A0465C31-4B07-FBBA-12EE-60D855B6395A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipousuario_id" id="FC236CF2-D2E0-D1B4-9AEF-68186EAC03BC">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>D920A2DE-20C8-4A4A-A5A7-A385991B38A6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D8DFFCD-2317-CA62-9DCC-140B533A353A" referredColumn="73A158C1-F314-0600-E54C-CA1E7902D221"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4DDA6C43-974A-E02D-74F5-6820E29C0821" name="usuario_pk">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>C10AAA13-00A5-1E5C-ADAC-23AC1B25496C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00F019F2-F0A6-E7B3-744E-8B8D4DCCE2AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56DF8C9B-11F4-BC5A-34C6-AA23DD3ED328" name="usuario_tipousuario_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC236CF2-D2E0-D1B4-9AEF-68186EAC03BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

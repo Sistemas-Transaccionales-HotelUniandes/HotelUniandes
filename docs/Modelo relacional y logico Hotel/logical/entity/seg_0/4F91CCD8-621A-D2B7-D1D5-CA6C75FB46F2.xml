@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4F91CCD8-621A-D2B7-D1D5-CA6C75FB46F2" name="tipohabitacion">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>0FFE1957-E578-0565-7071-D38F515F1B94</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="4B41A12D-7DC6-A949-A231-26BA75F011B1">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>8C562E5D-53BE-6345-69F8-766BD8061DB1</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="49ECCA7E-5FCB-0BE1-EA1F-1F3867E97E35">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>B9414C58-D3A2-9F1E-4949-524BEAD39510</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="7614F565-D04D-18C8-638E-8C4789B0D209">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>7FF54082-C645-6F13-0C32-2072C786F318</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="capacidad" id="EF3DC3F8-45CC-8A29-6609-8B96900BF1A1">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>E5A15AD6-67F0-7215-3951-5CC87F6E3666</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>02B3CEF3-74CB-4FE3-CDC9-E1494A712ACA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D5D37CA2-2678-70E6-02F6-DBE00DE95826" name="tipohabitacion pk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>158692A6-683E-5F3D-D989-A5697F02CBDE</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4B41A12D-7DC6-A949-A231-26BA75F011B1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

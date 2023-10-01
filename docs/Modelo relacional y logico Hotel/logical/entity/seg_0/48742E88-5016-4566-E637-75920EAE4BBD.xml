@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="48742E88-5016-4566-E637-75920EAE4BBD" name="cuenta">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>A95BF84B-5FB7-9161-878B-81EF71AAFEB1</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="reserva id" id="773D18EC-F9D6-3AE4-3078-574EF77108EC">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>CA2244E2-FCD3-301B-CA7B-CB7E2277989F</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<referedAttribute>A354CDBC-3AF0-46D2-5A0C-D6728BCE9984</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reserva planconsumo id" id="41A7A9E2-174F-A872-EBAA-DDAC13392598">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>074B63FB-42AE-54E5-7AC4-837CA23BF933</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total" id="587D0F55-CBEA-DCEE-E015-BD65974B817D">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>08160D71-3436-A836-BFE3-6745B215CAF8</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="181831C1-6900-5196-B387-2B1EA0609D55">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>D5EF4A43-2A61-7AF6-AFBF-484647DAE4A6</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="habitacion id" id="EE372CA2-E6B3-C652-C850-E0C5AFD5D10C">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>702BCBFE-4D28-BFB1-9ADC-1B1580AC2F28</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<referedAttribute>DBB719E6-88DE-BC50-98AE-D69F7DC9D1E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F0D0D75-CFAC-95E2-3813-B232AED8F45B" name="cuenta pk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>7A263946-5EF1-9774-43C0-B70AD727FE68</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EE372CA2-E6B3-C652-C850-E0C5AFD5D10C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

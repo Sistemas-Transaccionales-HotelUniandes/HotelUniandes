@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D333683E-340E-728E-64EE-634C4B6CDBBD" name="producto">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>526256D2-C6D0-5241-C79E-2CCDFCAC105B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3BE23108-134E-C1E6-82F7-67494CB30E47">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>BCCAD3D7-C3B9-ADE2-B7F2-FC7AAD9ECF0A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="9E10E5BC-1C60-6CBA-F9DA-54EE99C3FDD1">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>178E3D5C-BB23-FAC4-9ED0-5A4D8583FE20</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="1631B528-F3C0-C2D6-31A8-B1FD25672F2D">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>A487CFBF-0634-E0A6-8581-8694C5F467C6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="spa_id" id="1EC1CD13-3007-C3B6-D573-ADA52F8682F1">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>846B012E-A2B2-6E32-9271-66A006D07358</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDE1115D-564F-F581-EE0D-DD54FEF98EC2" referredColumn="57C3888F-4645-72A0-A20A-3D81B38C8F88"/>
+</associations>
+</Column>
+<Column name="tienda_tienda_id" id="9A3B6AA6-C1E2-8E69-FE0E-5AF19B7DA1BE">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>31BE223C-E2FD-211E-3BDD-EC0646C66D78</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71165663-7D53-CDDE-439B-65E585947416" referredColumn="C019B4E8-E629-CDDF-E557-47B00EEC8EC2"/>
+</associations>
+</Column>
+<Column name="local_local_id" id="C49B60E7-B632-CB48-521A-F619A0713C7B">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>4D5A84A5-CC6C-7F54-62F4-73DFDE30CBC3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="436482F9-9B77-408B-61F8-B2A1C992AE35" referredColumn="995811C4-B56C-7EEE-C53B-F8E54E85DEF1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F80E885-4375-1CFC-D8E4-3B7707650970" name="producto_pk">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>63AD1B82-D96E-1906-DBC7-E2EE3314593C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BE23108-134E-C1E6-82F7-67494CB30E47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A40DFD3E-29FB-CCFE-3EB2-DEABB856AB24" name="producto_local_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C49B60E7-B632-CB48-521A-F619A0713C7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99EC19B3-ED36-0EF2-3F3D-31EE4BF442DD" name="producto_spa_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EC1CD13-3007-C3B6-D573-ADA52F8682F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A885636B-923D-9F9A-070B-3CB0E6520C42" name="producto_tienda_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A3B6AA6-C1E2-8E69-FE0E-5AF19B7DA1BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

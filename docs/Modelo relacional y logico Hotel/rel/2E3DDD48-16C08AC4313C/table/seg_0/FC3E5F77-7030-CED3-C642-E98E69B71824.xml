@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC3E5F77-7030-CED3-C642-E98E69B71824" name="reserva">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>8527DB72-5804-C28C-4157-7F5F95EAEA31</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="24012546-303A-D237-FB49-B1C91CA8EB49">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>1073F959-F62B-1DE8-28FB-0A046EE1BCAB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numnoches" id="C3F51299-5D84-C3A8-F651-415585107191">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>DD198D89-65FC-F5BA-133A-F38F9BF492CA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>02B3CEF3-74CB-4FE3-CDC9-E1494A712ACA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechain" id="BD774D05-7092-B377-3C42-9B15728C5EB3">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>161A5224-565C-AF1E-703A-803E0C108EF3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>CD9E7D84-BB2D-7D16-97DA-7BAB290FBE99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="46DBD2C5-31B8-F4EC-490B-321079207B1A">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>8D91669E-72B3-9C1C-FAE9-1E64EDD97EB9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C88CA410-E6E8-AB15-73B2-5836EB5A056E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acompanantes" id="0890C440-315C-71C2-5310-ABFC30BC84B1">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>7D651574-D7C1-EEB0-25B7-FF109789EF4B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>02B3CEF3-74CB-4FE3-CDC9-E1494A712ACA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="planconsumo_id" id="607B53FD-9D1A-B8DF-EDCB-A8ED9AABCEFE">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>88B3044C-0468-B318-5CD5-9427230B07F2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B352D2C2-16B6-6271-E6AC-D012660115C0" referredColumn="6F3A23B6-2513-7A68-941B-16F31C678AFC"/>
+</associations>
+</Column>
+<Column name="cliente_cliente_id" id="28848084-149B-11E6-1601-744A0FBED0C0">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>51153C9C-3D27-2FE2-4270-F2E6237E91FD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5304F5E4-9AE3-D283-B223-14C11425D402" referredColumn="25FB7722-84BA-BF40-A427-04086915BFEB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6D7B180-946D-F2A9-9919-67A3C5CF45AF" name="reserva_pk">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>AFA3683A-4854-7A01-4F97-07700ADE8B21</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24012546-303A-D237-FB49-B1C91CA8EB49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D4363CD-C7DA-5A77-26D5-FE66D280E31B" name="reserva__idx">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>DE4B2EC8-3258-40B5-0574-18494C05E4E1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28848084-149B-11E6-1601-744A0FBED0C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7024DFC-195D-0F58-DEB2-A869FC3BBAD6" name="reserva_cliente_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28848084-149B-11E6-1601-744A0FBED0C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="183FAC5B-9E65-0249-5A2D-F39A1E8D5F14" name="reserva_planconsumo_fk">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="607B53FD-9D1A-B8DF-EDCB-A8ED9AABCEFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

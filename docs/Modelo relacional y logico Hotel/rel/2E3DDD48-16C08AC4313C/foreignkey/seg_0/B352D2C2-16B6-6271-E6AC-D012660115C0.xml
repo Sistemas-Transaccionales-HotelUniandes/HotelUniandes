@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B352D2C2-16B6-6271-E6AC-D012660115C0" containerWithKeyObject="FC3E5F77-7030-CED3-C642-E98E69B71824" localFKIndex="183FAC5B-9E65-0249-5A2D-F39A1E8D5F14" name="reserva_planconsumo_fk">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>314FB982-E0C5-7546-485E-DB098E3EDA68</importedID>
+<referredTableLongName>planconsumo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9759A5E6-087A-FCE8-62B0-C76EA1BDDD8A</referredTableID>
+<keyObject>BB0ECC8F-58A5-7597-FC7F-C25B9B6D066D</keyObject>
+<referredKeyID>BB0ECC8F-58A5-7597-FC7F-C25B9B6D066D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

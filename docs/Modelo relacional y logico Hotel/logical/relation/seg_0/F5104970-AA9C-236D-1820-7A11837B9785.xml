@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="producto_spa_fk" directorySegmentName="seg_0" id="F5104970-AA9C-236D-1820-7A11837B9785">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<generatorID>EDE1115D-564F-F581-EE0D-DD54FEF98EC2</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<sourcePk>7BC92D33-FC8A-3BCA-ACAD-773739E3387B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>25A01645-088B-EA66-4B92-412B4C661CC1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8C46EAE2-578B-2096-2CF1-54B603289706</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="222CD213-E5F3-95D6-CC15-0C414236B601" containerWithKeyObject="A42454F4-F839-F854-5681-5484B086CEC6" localFKIndex="4ACCDE5D-423A-263F-0084-65649E810CFA" name="reservaspa_spa_fk">
+<sourceDDLFile>generador.ddl</sourceDDLFile>
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:04:53 UTC</createdTime>
+<ownerDesignName>generador</ownerDesignName>
+<importedID>AD27EDB7-85E8-C96C-0EE2-78C3C9AE3349</importedID>
+<referredTableLongName>spa</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>12B893C3-7394-1E8E-2354-D0451A7A7096</referredTableID>
+<keyObject>8618F3EF-5E24-846C-D7D3-0E4B9787A8EB</keyObject>
+<referredKeyID>8618F3EF-5E24-846C-D7D3-0E4B9787A8EB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
