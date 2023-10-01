@@ -3,7 +3,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>0E542087-4CEF-378A-4AB8-D37AD38FF2B0</importedID>
 <referredTableLongName>spa</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

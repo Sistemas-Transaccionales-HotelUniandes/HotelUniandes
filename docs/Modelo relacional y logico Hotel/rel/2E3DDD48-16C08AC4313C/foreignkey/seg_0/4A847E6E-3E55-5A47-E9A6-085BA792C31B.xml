@@ -3,7 +3,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>1D4117EE-BBFF-88E5-851E-59DD198ADA24</importedID>
 <referredTableLongName>cuenta</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
@@ -11,7 +11,7 @@
 <keyObject>7A263946-5EF1-9774-43C0-B70AD727FE68</keyObject>
 <referredKeyID>7A263946-5EF1-9774-43C0-B70AD727FE68</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>habitacion_id</refColNames>
+<refColNames>reserva_id,habitacion_id</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

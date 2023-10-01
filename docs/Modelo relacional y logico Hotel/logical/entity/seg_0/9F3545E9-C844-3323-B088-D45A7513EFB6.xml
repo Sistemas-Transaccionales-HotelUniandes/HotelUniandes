@@ -72,15 +72,15 @@
 <domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cuenta habitacion id" id="72337A3D-0234-21ED-A84A-D5C17B8EBEFB">
+<Attribute name="cuenta reserva id" id="3D40A282-10E1-7E29-9EB5-247A015E287D">
 <createdBy>57313</createdBy>
-<createdTime>2023-10-01 20:05:21 UTC</createdTime>
+<createdTime>2023-10-01 20:43:52 UTC</createdTime>
 <generatorID>F566F69D-BF15-A160-DF26-4DDD3CEE9EC3</generatorID>
 <ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <engineerTo>
 <item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
 </engineerTo>
-<referedAttribute>EE372CA2-E6B3-C652-C850-E0C5AFD5D10C</referedAttribute>
+<referedAttribute>773D18EC-F9D6-3AE4-3078-574EF77108EC</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
@@ -98,7 +98,6 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>72337A3D-0234-21ED-A84A-D5C17B8EBEFB</attributeRef>
 <attributeRef>267BDB32-74DC-0077-D180-C35DFB8E4C83</attributeRef>
 </usedAttributes>
 </identifier>
