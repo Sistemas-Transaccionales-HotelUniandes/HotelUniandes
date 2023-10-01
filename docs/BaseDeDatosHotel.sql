@@ -1,15 +1,40 @@
+-- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
+--   en:        2023-10-01 14:57:19 COT
+--   sitio:      Oracle Database 21c
+--   tipo:      Oracle Database 21c
+
+
+
+-- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+
+-- predefined type, no DDL - XMLTYPE
+
 CREATE TABLE cliente (
-    cliente_id NUMBER NOT NULL
+    cliente_id NUMBER NOT NULL,
+    usuario_id NUMBER NOT NULL
 );
+
+CREATE UNIQUE INDEX cliente__idx ON
+    cliente (
+        usuario_id
+    ASC );
 
 ALTER TABLE cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( cliente_id );
 
+CREATE TABLE consumo (
+    cuenta_habitacion_id NUMBER NOT NULL,
+    servicio_id          NUMBER NOT NULL
+);
+
+ALTER TABLE consumo ADD CONSTRAINT consumo_pk PRIMARY KEY ( cuenta_habitacion_id,
+                                                            servicio_id );
+
 CREATE TABLE cuenta (
-    habitacion_id          NUMBER NOT NULL,
     reserva_id             NUMBER NOT NULL,
     reserva_planconsumo_id NUMBER NOT NULL,
     total                  NUMBER,
-    descripcion            VARCHAR2(255 BYTE)
+    descripcion            VARCHAR2(255 BYTE),
+    habitacion_id          NUMBER NOT NULL
 );
 
 CREATE UNIQUE INDEX cuenta__idx ON
@@ -26,10 +51,15 @@ CREATE TABLE gimnasio (
     nummaquinas INTEGER,
     horainicio  VARCHAR2(255 BYTE),
     horafin     VARCHAR2(255 BYTE),
-    gimnasio_id NUMBER NOT NULL
+    servicio_id NUMBER NOT NULL
 );
 
-ALTER TABLE gimnasio ADD CONSTRAINT gimnasio_pk PRIMARY KEY ( gimnasio_id );
+CREATE UNIQUE INDEX gimnasio__idx ON
+    gimnasio (
+        servicio_id
+    ASC );
+
+ALTER TABLE gimnasio ADD CONSTRAINT gimnasio_pk PRIMARY KEY ( servicio_id );
 
 CREATE TABLE habitacion (
     id                NUMBER NOT NULL,
@@ -40,10 +70,15 @@ ALTER TABLE habitacion ADD CONSTRAINT habitacion_pk PRIMARY KEY ( id );
 
 CREATE TABLE internet (
     capacidad   INTEGER,
-    internet_id NUMBER NOT NULL
+    servicio_id NUMBER NOT NULL
 );
 
-ALTER TABLE internet ADD CONSTRAINT internet_pk PRIMARY KEY ( internet_id );
+CREATE UNIQUE INDEX internet__idx ON
+    internet (
+        servicio_id
+    ASC );
+
+ALTER TABLE internet ADD CONSTRAINT internet_pk PRIMARY KEY ( servicio_id );
 
 CREATE TABLE local (
     tipo        VARCHAR2(255 BYTE),
@@ -65,10 +100,15 @@ CREATE TABLE piscina (
     profundidad INTEGER,
     horainicio  VARCHAR2(255 BYTE),
     horafin     VARCHAR2(255 BYTE),
-    piscina_id  NUMBER NOT NULL
+    servicio_id NUMBER NOT NULL
 );
 
-ALTER TABLE piscina ADD CONSTRAINT piscina_pk PRIMARY KEY ( piscina_id );
+CREATE UNIQUE INDEX piscina__idx ON
+    piscina (
+        servicio_id
+    ASC );
+
+ALTER TABLE piscina ADD CONSTRAINT piscina_pk PRIMARY KEY ( servicio_id );
 
 CREATE TABLE planconsumo (
     id          NUMBER NOT NULL,
@@ -82,9 +122,9 @@ CREATE TABLE producto (
     id               NUMBER NOT NULL,
     nombre           VARCHAR2(255 BYTE),
     precio           NUMBER,
-    spa_id           NUMBER NOT NULL,
-    tienda_tienda_id NUMBER NOT NULL,
-    local_local_id   NUMBER NOT NULL
+    spa_id           NUMBER,
+    tienda_tienda_id NUMBER,
+    local_local_id   NUMBER
 );
 
 ALTER TABLE producto ADD CONSTRAINT producto_pk PRIMARY KEY ( id );
@@ -104,8 +144,7 @@ CREATE UNIQUE INDEX reserva__idx ON
         cliente_cliente_id
     ASC );
 
-ALTER TABLE reserva ADD CONSTRAINT reserva_pk PRIMARY KEY ( id,
-                                                            planconsumo_id );
+ALTER TABLE reserva ADD CONSTRAINT reserva_pk PRIMARY KEY ( id );
 
 CREATE TABLE reservasalon (
     horainicio           VARCHAR2(255 BYTE),
@@ -115,7 +154,8 @@ CREATE TABLE reservasalon (
     cuenta_habitacion_id NUMBER NOT NULL
 );
 
-ALTER TABLE reservasalon ADD CONSTRAINT reservasalon_pk PRIMARY KEY ( cuenta_habitacion_id );
+ALTER TABLE reservasalon ADD CONSTRAINT reservasalon_pk PRIMARY KEY ( cuenta_habitacion_id,
+                                                                      salon_id );
 
 CREATE TABLE ReservaSpa (
     costo NUMBER,
@@ -140,28 +180,9 @@ CREATE TABLE salon (
 ALTER TABLE salon ADD CONSTRAINT salon_pk PRIMARY KEY ( id );
 
 CREATE TABLE servicio (
-    id                   NUMBER NOT NULL,
-    costo                NUMBER,
-    cuenta_habitacion_id NUMBER NOT NULL,
-    piscina_piscina_id   NUMBER NOT NULL,
-    internet_internet_id NUMBER NOT NULL,
-    gimnasio_gimnasio_id NUMBER NOT NULL
+    id    NUMBER NOT NULL,
+    costo NUMBER
 );
-
-CREATE UNIQUE INDEX servicio__idx ON
-    servicio (
-        piscina_piscina_id
-    ASC );
-
-CREATE UNIQUE INDEX servicio__idxv1 ON
-    servicio (
-        internet_internet_id
-    ASC );
-
-CREATE UNIQUE INDEX servicio__idxv2 ON
-    servicio (
-        gimnasio_gimnasio_id
-    ASC );
 
 ALTER TABLE servicio ADD CONSTRAINT servicio_pk PRIMARY KEY ( id );
 
@@ -203,38 +224,54 @@ CREATE TABLE tipousuario (
 ALTER TABLE tipousuario ADD CONSTRAINT tipousuario_pk PRIMARY KEY ( id );
 
 CREATE TABLE usuario (
-    id                 NUMBER NOT NULL,
-    nombre             VARCHAR2(255 BYTE),
-    email              VARCHAR2(255 BYTE),
-    documento          VARCHAR2(255 BYTE),
-    tipodocumento      VARCHAR2(255 BYTE),
-    tipousuario_id     NUMBER NOT NULL,
-    cliente_cliente_id NUMBER NOT NULL
+    id             NUMBER NOT NULL,
+    nombre         VARCHAR2(255 BYTE),
+    email          VARCHAR2(255 BYTE),
+    documento      VARCHAR2(255 BYTE),
+    tipodocumento  VARCHAR2(255 BYTE),
+    tipousuario_id NUMBER NOT NULL
 );
 
-CREATE UNIQUE INDEX usuario__idx ON
-    usuario (
-        cliente_cliente_id
-    ASC );
-
 ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( id );
+
+ALTER TABLE cliente
+    ADD CONSTRAINT cliente_usuario_fk FOREIGN KEY ( usuario_id )
+        REFERENCES usuario ( id );
+
+ALTER TABLE consumo
+    ADD CONSTRAINT consumo_cuenta_fk FOREIGN KEY ( cuenta_habitacion_id )
+        REFERENCES cuenta ( habitacion_id );
+
+ALTER TABLE consumo
+    ADD CONSTRAINT consumo_servicio_fk FOREIGN KEY ( servicio_id )
+        REFERENCES servicio ( id );
 
 ALTER TABLE cuenta
     ADD CONSTRAINT cuenta_habitacion_fk FOREIGN KEY ( habitacion_id )
         REFERENCES habitacion ( id );
 
 ALTER TABLE cuenta
-    ADD CONSTRAINT cuenta_reserva_fk FOREIGN KEY ( reserva_id,
-                                                   reserva_planconsumo_id )
-        REFERENCES reserva ( id,
-                             planconsumo_id );
+    ADD CONSTRAINT cuenta_reserva_fk FOREIGN KEY ( reserva_id )
+        REFERENCES reserva ( id );
+
+ALTER TABLE gimnasio
+    ADD CONSTRAINT gimnasio_servicio_fk FOREIGN KEY ( servicio_id )
+        REFERENCES servicio ( id );
 
 ALTER TABLE habitacion
     ADD CONSTRAINT habitacion_tipohabitacion_fk FOREIGN KEY ( tipohabitacion_id )
         REFERENCES tipohabitacion ( id );
 
+ALTER TABLE internet
+    ADD CONSTRAINT internet_servicio_fk FOREIGN KEY ( servicio_id )
+        REFERENCES servicio ( id );
+
 ALTER TABLE local
     ADD CONSTRAINT local_servicio_fk FOREIGN KEY ( servicio_id )
+        REFERENCES servicio ( id );
+
+ALTER TABLE piscina
+    ADD CONSTRAINT piscina_servicio_fk FOREIGN KEY ( servicio_id )
         REFERENCES servicio ( id );
 
 ALTER TABLE producto
@@ -273,96 +310,55 @@ ALTER TABLE reservaspa
     ADD CONSTRAINT reservaspa_spa_fk FOREIGN KEY ( spa_id )
         REFERENCES spa ( id );
 
-ALTER TABLE servicio
-    ADD CONSTRAINT servicio_cuenta_fk FOREIGN KEY ( cuenta_habitacion_id )
-        REFERENCES cuenta ( habitacion_id );
-
-ALTER TABLE servicio
-    ADD CONSTRAINT servicio_gimnasio_fk FOREIGN KEY ( gimnasio_gimnasio_id )
-        REFERENCES gimnasio ( gimnasio_id );
-
-ALTER TABLE servicio
-    ADD CONSTRAINT servicio_internet_fk FOREIGN KEY ( internet_internet_id )
-        REFERENCES internet ( internet_id );
-
-ALTER TABLE servicio
-    ADD CONSTRAINT servicio_piscina_fk FOREIGN KEY ( piscina_piscina_id )
-        REFERENCES piscina ( piscina_id );
-
 ALTER TABLE tienda
     ADD CONSTRAINT tienda_servicio_fk FOREIGN KEY ( servicio_id )
         REFERENCES servicio ( id );
 
 ALTER TABLE usuario
-    ADD CONSTRAINT usuario_cliente_fk FOREIGN KEY ( cliente_cliente_id )
-        REFERENCES cliente ( cliente_id );
-
-ALTER TABLE usuario
     ADD CONSTRAINT usuario_tipousuario_fk FOREIGN KEY ( tipousuario_id )
         REFERENCES tipousuario ( id );
 
-CREATE SEQUENCE cliente_cliente_id_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER cliente_cliente_id_trg BEFORE
-    INSERT ON cliente
-    FOR EACH ROW
-    WHEN ( new.cliente_id IS NULL )
-BEGIN
-    :new.cliente_id := cliente_cliente_id_seq.nextval;
-END;
-/
 
-CREATE SEQUENCE gimnasio_gimnasio_id_seq START WITH 1 NOCACHE ORDER;
-
-CREATE OR REPLACE TRIGGER gimnasio_gimnasio_id_trg BEFORE
-    INSERT ON gimnasio
-    FOR EACH ROW
-    WHEN ( new.gimnasio_id IS NULL )
-BEGIN
-    :new.gimnasio_id := gimnasio_gimnasio_id_seq.nextval;
-END;
-/
-
-CREATE SEQUENCE internet_internet_id_seq START WITH 1 NOCACHE ORDER;
-
-CREATE OR REPLACE TRIGGER internet_internet_id_trg BEFORE
-    INSERT ON internet
-    FOR EACH ROW
-    WHEN ( new.internet_id IS NULL )
-BEGIN
-    :new.internet_id := internet_internet_id_seq.nextval;
-END;
-/
-
-CREATE SEQUENCE local_local_id_seq START WITH 1 NOCACHE ORDER;
-
-CREATE OR REPLACE TRIGGER local_local_id_trg BEFORE
-    INSERT ON local
-    FOR EACH ROW
-    WHEN ( new.local_id IS NULL )
-BEGIN
-    :new.local_id := local_local_id_seq.nextval;
-END;
-/
-
-CREATE SEQUENCE piscina_piscina_id_seq START WITH 1 NOCACHE ORDER;
-
-CREATE OR REPLACE TRIGGER piscina_piscina_id_trg BEFORE
-    INSERT ON piscina
-    FOR EACH ROW
-    WHEN ( new.piscina_id IS NULL )
-BEGIN
-    :new.piscina_id := piscina_piscina_id_seq.nextval;
-END;
-/
-
-CREATE SEQUENCE tienda_tienda_id_seq START WITH 1 NOCACHE ORDER;
-
-CREATE OR REPLACE TRIGGER tienda_tienda_id_trg BEFORE
-    INSERT ON tienda
-    FOR EACH ROW
-    WHEN ( new.tienda_id IS NULL )
-BEGIN
-    :new.tienda_id := tienda_tienda_id_seq.nextval;
-END;
-/
+-- Informe de Resumen de Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                            20
+-- CREATE INDEX                             8
+-- ALTER TABLE                             41
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE MATERIALIZED VIEW LOG             0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0
