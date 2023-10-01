@@ -3,7 +3,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>8527DB72-5804-C28C-4157-7F5F95EAEA31</importedID>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>1073F959-F62B-1DE8-28FB-0A046EE1BCAB</importedID>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -25,7 +25,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>DD198D89-65FC-F5BA-133A-F38F9BF492CA</importedID>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -38,7 +38,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>161A5224-565C-AF1E-703A-803E0C108EF3</importedID>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -51,7 +51,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>8D91669E-72B3-9C1C-FAE9-1E64EDD97EB9</importedID>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -64,7 +64,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>7D651574-D7C1-EEB0-25B7-FF109789EF4B</importedID>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -77,7 +77,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>88B3044C-0468-B318-5CD5-9427230B07F2</importedID>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -92,7 +92,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>51153C9C-3D27-2FE2-4270-F2E6237E91FD</importedID>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -109,7 +109,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>AFA3683A-4854-7A01-4F97-07700ADE8B21</importedID>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
@@ -122,7 +122,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>DE4B2EC8-3258-40B5-0574-18494C05E4E1</importedID>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -133,7 +133,7 @@
 <ind_PK_UK id="B7024DFC-195D-0F58-DEB2-A869FC3BBAD6" name="reserva_cliente_fk">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -143,7 +143,7 @@
 <ind_PK_UK id="183FAC5B-9E65-0249-5A2D-F39A1E8D5F14" name="reserva_planconsumo_fk">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

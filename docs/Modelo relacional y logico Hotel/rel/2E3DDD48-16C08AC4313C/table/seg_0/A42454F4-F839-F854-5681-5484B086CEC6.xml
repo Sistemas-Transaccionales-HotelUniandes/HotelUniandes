@@ -3,7 +3,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>3042EE51-5320-0F86-8283-890793E8B9C2</importedID>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>3909B0B8-2BAF-EEA7-C54D-350D0B187E4F</importedID>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -26,7 +26,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>775530A2-C033-7680-53CE-519BD77DD3A3</importedID>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -39,7 +39,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>CFC319BE-52B3-5CA8-8280-26646C19F5CE</importedID>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -52,7 +52,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>830AB859-72B1-96B6-0505-B79EFE0F4072</importedID>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -67,7 +67,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>F54C421E-416F-060B-052A-E42DCE9052E6</importedID>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -78,13 +78,27 @@
 <colAssociation fkAssociation="4A847E6E-3E55-5A47-E9A6-085BA792C31B" referredColumn="FF9FD4C4-4534-9FB3-A383-86C45D18152B"/>
 </associations>
 </Column>
+<Column name="cuenta_reserva_id" id="E383E7CD-6F88-E847-DF6A-B20A1C7ED161">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:43:47 UTC</createdTime>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A847E6E-3E55-5A47-E9A6-085BA792C31B" referredColumn="AD6A5BCB-69A5-442F-D366-2F09D3492A9F"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="74CF1075-3AB2-0382-A43F-BE6A13B22A7C" name="reservaspa_pk">
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>E656E0D1-8A75-1E48-8C68-ABD85D9C6CB7</importedID>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
@@ -97,17 +111,18 @@
 <ind_PK_UK id="C609E9E6-047C-11C2-0606-3D00B2BF0142" name="reservaspa_cuenta_fk">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
+<colUsage columnID="E383E7CD-6F88-E847-DF6A-B20A1C7ED161"/>
 <colUsage columnID="10D7AAB1-22C8-6C28-E721-49BDECC34314"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4ACCDE5D-423A-263F-0084-65649E810CFA" name="reservaspa_spa_fk">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

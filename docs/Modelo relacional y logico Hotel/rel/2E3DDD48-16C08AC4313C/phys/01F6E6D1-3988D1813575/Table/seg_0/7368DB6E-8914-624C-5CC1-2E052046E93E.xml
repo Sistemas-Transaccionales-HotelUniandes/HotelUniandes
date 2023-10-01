@@ -2,7 +2,7 @@
 <TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="reservasalon" directorySegmentName="seg_0" id="7368DB6E-8914-624C-5CC1-2E052046E93E">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
 <temporaryChanged>false</temporaryChanged>
@@ -12,46 +12,51 @@
 <ColumnProxy name="cuenta_habitacion_id" id="1A008D78-DA51-623D-E02E-F91D2B728D05">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="salon_id" id="6C4AE52C-2715-E652-9652-76876094FC94">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="horainicio" id="78986EFC-1258-F9E0-898B-78192E9C8878">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cuenta_reserva_id" id="8A08057F-5503-444D-7557-EAC566FECF64">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:43:47 UTC</createdTime>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="dia" id="9244538C-5A9B-FFC0-7E7C-7132070965F6">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="duracion" id="B9B0CAE4-0CCC-4F70-B7C8-9196C48D03D8">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
 <foreignKeys>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="reservasalon_salon_fk" id="823E60DA-8373-1C8B-32D5-AC556F4BB4AE">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 </ForeignKey>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="reservasalon_cuenta_fk" id="CFDB3D05-CEFB-688A-4603-A01817F7053C">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 </ForeignKey>
 </foreignKeys>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="reservasalon_pk" id="A0BDA77A-DEDB-A893-F11B-1765DF107CC9">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <indexSort>SORTED</indexSort>
 </PrimaryKey>
 </primaryKeys>

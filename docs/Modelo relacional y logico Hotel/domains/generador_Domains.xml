@@ -4,7 +4,7 @@
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="02B3CEF3-74CB-4FE3-CDC9-E1494A712ACA">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>Sin título_1</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
 <fileName>generador_Domains</fileName>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -12,7 +12,7 @@
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_dia BYTE" id="13D3AC26-D7D3-C8B8-C35C-BBBD54DE003A">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>Sin título_1</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
@@ -23,7 +23,7 @@
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>Sin título_1</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
 <fileName>generador_Domains</fileName>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -31,7 +31,7 @@
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_255 BYTE" id="C88CA410-E6E8-AB15-73B2-5836EB5A056E">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>Sin título_1</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
@@ -42,7 +42,7 @@
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="CD9E7D84-BB2D-7D16-97DA-7BAB290FBE99">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>Sin título_1</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
 <fileName>generador_Domains</fileName>
 <logicalDatatype>LOGDT007</logicalDatatype>

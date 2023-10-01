@@ -16,20 +16,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="cuenta habitacion id" id="9237B917-7290-49EC-3D0A-BA407995331F">
-<createdBy>57313</createdBy>
-<createdTime>2023-10-01 20:05:21 UTC</createdTime>
-<generatorID>3E4DD7FE-70C2-62A9-500E-6D672E5E6222</generatorID>
-<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
-<engineerTo>
-<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
-</engineerTo>
-<referedAttribute>EE372CA2-E6B3-C652-C850-E0C5AFD5D10C</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="servicio id" id="D0E18825-2489-C98D-AA3B-C1EBBCCB57DE">
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:05:21 UTC</createdTime>
@@ -39,6 +25,20 @@
 <item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
 </engineerTo>
 <referedAttribute>2AF22FD3-90EC-70AF-1684-16FB60FE092D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cuenta reserva id" id="EF07A9DF-DAD3-694E-790B-C86ED8CAB739">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:43:52 UTC</createdTime>
+<generatorID>3E4DD7FE-70C2-62A9-500E-6D672E5E6222</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<referedAttribute>773D18EC-F9D6-3AE4-3078-574EF77108EC</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1E3E70FC-5BBE-780A-E5CC-D8E21E9AD13F</domain>
@@ -56,7 +56,6 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>9237B917-7290-49EC-3D0A-BA407995331F</attributeRef>
 <attributeRef>D0E18825-2489-C98D-AA3B-C1EBBCCB57DE</attributeRef>
 </usedAttributes>
 </identifier>

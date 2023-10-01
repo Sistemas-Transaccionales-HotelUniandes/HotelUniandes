@@ -3,7 +3,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>06BDADCC-F3CB-86A7-6117-5E2172832557</importedID>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>B7300B70-609F-BCB0-CF08-A3519506EB77</importedID>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -25,7 +25,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>E4DD0272-A272-5E9C-15C3-ACED70EC28C3</importedID>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -40,7 +40,7 @@
 <sourceDDLFile>generador.ddl</sourceDDLFile>
 <createdBy>57313</createdBy>
 <createdTime>2023-10-01 20:04:53 UTC</createdTime>
-<ownerDesignName>generador</ownerDesignName>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
 <importedID>F7111672-1EC7-C31A-1715-FEB740CED353</importedID>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>

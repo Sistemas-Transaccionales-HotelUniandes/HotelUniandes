@@ -71,6 +71,21 @@
 <domain>02B3CEF3-74CB-4FE3-CDC9-E1494A712ACA</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="tipo" id="88EB0699-D63D-8980-E681-8F91B6D2CD9A">
+<createdBy>57313</createdBy>
+<createdTime>2023-10-01 20:43:52 UTC</createdTime>
+<generatorID>A805D635-E2D9-CC94-9945-3994C0546963</generatorID>
+<ownerDesignName>Modelo relacional y logico Hotel</ownerDesignName>
+<engineerTo>
+<item key="2E3DDD48-22C1-003F-7072-16C08AC4313C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D5D37CA2-2678-70E6-02F6-DBE00DE95826" name="tipohabitacion pk">
