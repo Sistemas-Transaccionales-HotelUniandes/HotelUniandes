@@ -10,11 +10,11 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "cliente")
-public class Cliente {
+public class Cliente{
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     @OneToOne
     @JoinColumn(name = "usuario", referencedColumnName = "id")
@@ -38,7 +38,7 @@ public class Cliente {
      * Returns the ID of the client.
      * @return The ID of the client.
      */
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -54,7 +54,7 @@ public class Cliente {
      * Sets the ID of the client.
      * @param id The ID of the client.
      */
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

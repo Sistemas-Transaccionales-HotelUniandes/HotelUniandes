@@ -7,42 +7,35 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tipoUsuario")
-public class TipoUsuario {
+@Table(name = "servicio")
+public abstract class Servicio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String tipo;
 
-    public TipoUsuario() {;}
+    private Double costo;
 
-    public TipoUsuario(String tipo) {
-        this.tipo = tipo;
+    public Servicio() {;}
+
+    public Servicio(Double costo) {
+        this.costo = costo;
     }
 
     public Integer getId() {
         return this.id;
     }
 
-    public String getTipo() {
-        return this.tipo;
+    public Double getCosto() {
+        return this.costo;
     }
 
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    @Override
-    public String toString() {
-        return "{" +
-            " id='" + getId() + "'" +
-            ", tipo='" + getTipo() + "'" +
-            "}";
+    public void setCosto(Double costo) {
+        this.costo = costo;
     }
     
 }

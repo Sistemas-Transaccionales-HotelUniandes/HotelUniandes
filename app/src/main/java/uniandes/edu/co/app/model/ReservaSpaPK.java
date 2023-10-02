@@ -1,9 +1,13 @@
 package uniandes.edu.co.app.model;
 
+import java.io.Serializable;
+
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
-public class ReservaSpaPK {
+@Embeddable
+public class ReservaSpaPK implements Serializable{
 
     @ManyToOne
     @JoinColumn(name = "cuenta", referencedColumnName = "id")

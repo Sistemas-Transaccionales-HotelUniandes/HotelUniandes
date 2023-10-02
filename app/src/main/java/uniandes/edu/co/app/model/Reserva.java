@@ -16,11 +16,11 @@ public class Reserva {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
     private Date fechaIn;
     private Integer numNoches;
     private String estado; // creada, activa, cancelada, terminada
-    private Integer acompañantes;
+    private Integer acompanantes;
 
     @OneToOne
     @JoinColumn(name = "cliente", referencedColumnName = "id")
@@ -32,16 +32,16 @@ public class Reserva {
 
     public Reserva() {;}
 
-    public Reserva(Date fechaIn, Integer numNoches, String estado, Integer acompañantes, Cliente cliente, PlanConsumo planConsumo) {
+    public Reserva(Date fechaIn, Integer numNoches, String estado, Integer acompanantes, Cliente cliente, PlanConsumo planConsumo) {
         this.fechaIn = fechaIn;
         this.numNoches = numNoches;
         this.estado = estado;
-        this.acompañantes = acompañantes;
+        this.acompanantes = acompanantes;
         this.cliente = cliente;
         this.planConsumo = planConsumo;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -57,8 +57,8 @@ public class Reserva {
         return this.estado;
     }
 
-    public Integer getAcompañantes() {
-        return this.acompañantes;
+    public Integer getAcompanantes() {
+        return this.acompanantes;
     }
 
     public Cliente getCliente() {
@@ -69,7 +69,7 @@ public class Reserva {
         return this.planConsumo;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -85,8 +85,8 @@ public class Reserva {
         this.estado = estado;
     }
 
-    public void setAcompañantes(Integer acompañantes) {
-        this.acompañantes = acompañantes;
+    public void setAcompanantes(Integer acompañantes) {
+        this.acompanantes = acompañantes;
     }
 
     public void setCliente(Cliente cliente) {

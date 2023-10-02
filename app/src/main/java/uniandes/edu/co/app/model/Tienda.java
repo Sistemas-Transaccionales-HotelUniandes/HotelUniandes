@@ -4,25 +4,37 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tipoUsuario")
-public class TipoUsuario {
+@Table(name = "tienda")
+public class Tienda extends Servicio{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+
+    @OneToOne
+    @JoinColumn(name = "servicio", referencedColumnName = "id")
+    private Servicio servicio;
+
     private String tipo;
 
-    public TipoUsuario() {;}
+    public Tienda() {;}
 
-    public TipoUsuario(String tipo) {
+    public Tienda(Servicio servicio, String tipo) {
+        this.servicio = servicio;
         this.tipo = tipo;
     }
 
     public Integer getId() {
         return this.id;
+    }
+
+    public Servicio getServicio() {
+        return this.servicio;
     }
 
     public String getTipo() {
@@ -33,16 +45,12 @@ public class TipoUsuario {
         this.id = id;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setServicio(Servicio servicio) {
+        this.servicio = servicio;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-            " id='" + getId() + "'" +
-            ", tipo='" + getTipo() + "'" +
-            "}";
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
     
 }

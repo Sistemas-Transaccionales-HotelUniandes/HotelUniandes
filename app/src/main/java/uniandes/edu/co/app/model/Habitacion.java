@@ -14,7 +14,7 @@ public class Habitacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;  
+    private Integer id;  
 
     @ManyToOne
     @JoinColumn(name = "tipoHabitacion", referencedColumnName = "id")
@@ -27,7 +27,7 @@ public class Habitacion {
  
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -35,7 +35,7 @@ public class Habitacion {
         return this.tipoHabitacion;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
