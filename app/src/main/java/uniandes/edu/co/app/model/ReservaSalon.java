@@ -61,5 +61,14 @@ public class ReservaSalon {
     public void setId(ReservaSalonPK id) {
         this.id = id;
     }
+
+    public Cuenta getCuentaReserva() {
+        return this.reserva;
+    }
+
+    public void setCuentaReserva(Cuenta reserva) {
+        this.reserva = reserva;
+    }
+    
     
 }

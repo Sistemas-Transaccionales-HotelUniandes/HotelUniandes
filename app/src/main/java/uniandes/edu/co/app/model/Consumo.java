@@ -33,5 +33,31 @@ public class Consumo {
         this.id = id;
     }
 
+    public Cuenta getCuentaReserva() {
+        return this.reserva;
+    }
+
+    public void setCuentaReserva(Cuenta reserva) {
+        this.reserva = reserva;
+    }
+
+    public Servicio getServicio() {
+        return this.id.getServicio();
+    }
+
+    public void setServicio(Servicio servicio) {
+        this.id.setServicio(servicio);
+    }
+
+    public Cuenta getCuenta() {
+        return this.id.getCuenta();
+    }
+
+    public void setCuenta(Cuenta cuenta) {
+        this.id.setCuenta(cuenta);
+    }
+    
+
+
     
 }

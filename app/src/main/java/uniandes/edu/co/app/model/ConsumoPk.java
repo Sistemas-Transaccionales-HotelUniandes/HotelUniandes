@@ -42,5 +42,6 @@ public class ConsumoPk implements Serializable{
         this.cuenta = cuenta;
     }
 
+
     
 }
