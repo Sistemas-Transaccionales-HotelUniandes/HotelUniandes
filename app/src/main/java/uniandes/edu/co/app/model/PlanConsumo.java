@@ -12,7 +12,7 @@ public class PlanConsumo {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
     private String nombre;
     private String descripcion;
 
@@ -23,7 +23,7 @@ public class PlanConsumo {
         this.descripcion = descripcion;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -35,7 +35,7 @@ public class PlanConsumo {
         return this.descripcion;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

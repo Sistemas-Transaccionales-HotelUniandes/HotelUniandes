@@ -12,7 +12,7 @@ public class TipoUsuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
     private String tipo;
 
     public TipoUsuario() {;}
@@ -21,7 +21,7 @@ public class TipoUsuario {
         this.tipo = tipo;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -29,7 +29,7 @@ public class TipoUsuario {
         return this.tipo;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

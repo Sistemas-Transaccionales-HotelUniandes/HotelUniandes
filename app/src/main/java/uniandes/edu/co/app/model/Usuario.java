@@ -18,7 +18,7 @@ public class Usuario {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
     private String nombre;
     private String email;
     private String tipoDocumento ;
@@ -39,7 +39,7 @@ public class Usuario {
     }
 
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -63,7 +63,7 @@ public class Usuario {
         return this.tipoUsuario;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

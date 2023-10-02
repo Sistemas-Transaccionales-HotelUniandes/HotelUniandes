@@ -12,7 +12,7 @@ public abstract class Servicio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     private Double costo;
 
@@ -22,7 +22,7 @@ public abstract class Servicio {
         this.costo = costo;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -30,7 +30,7 @@ public abstract class Servicio {
         return this.costo;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

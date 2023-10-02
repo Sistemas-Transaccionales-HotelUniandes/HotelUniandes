@@ -13,7 +13,7 @@ public class Producto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "spa", referencedColumnName = "id")
@@ -40,7 +40,7 @@ public class Producto {
         this.precio = precio;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 

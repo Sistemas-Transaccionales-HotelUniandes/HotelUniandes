@@ -13,7 +13,7 @@ public class Local extends Servicio{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     @OneToOne
     @JoinColumn(name = "servicio", referencedColumnName = "id")
@@ -32,7 +32,7 @@ public class Local extends Servicio{
         this.estilo = estilo;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -52,7 +52,7 @@ public class Local extends Servicio{
         return this.estilo;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

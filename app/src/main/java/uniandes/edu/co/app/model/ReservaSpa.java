@@ -2,6 +2,8 @@ package uniandes.edu.co.app.model;
 
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -15,6 +17,10 @@ public class ReservaSpa {
     private String dia;
     private Double costo;
 
+    @ManyToOne
+    @JoinColumn(name = "cuenta", referencedColumnName = "reserva")
+    private Cuenta reserva;
+
     public ReservaSpa() {;}
 
     public ReservaSpa(Cuenta cuenta, Spa spa, String horaIn, String dia, Double costo) {
@@ -22,6 +28,7 @@ public class ReservaSpa {
         this.horaIn = horaIn;
         this.dia = dia;
         this.costo = costo;
+        this.reserva = cuenta;
     }
 
     public ReservaSpaPK getId() {

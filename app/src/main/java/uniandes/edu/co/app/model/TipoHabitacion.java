@@ -12,7 +12,7 @@ public class TipoHabitacion {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
     private String tipo;
     private String descripcion;
     private Integer capacidad;
@@ -27,7 +27,7 @@ public class TipoHabitacion {
         this.precio = precio;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -47,7 +47,7 @@ public class TipoHabitacion {
         return this.precio;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
