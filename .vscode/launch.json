@@ -15,6 +15,16 @@
             "projectName": "parranderos",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-HotelUniandesApplication<HotelUniandes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "uniandes.edu.co.app.HotelUniandesApplication",
+            "projectName": "HotelUniandes",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
