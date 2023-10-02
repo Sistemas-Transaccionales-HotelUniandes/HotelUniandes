@@ -1,0 +1,33 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< uniandes.edu.co:HotelUniandes >--------------------
+[INFO] Building HotelUniandes 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ HotelUniandes ---
+[INFO] skip non existing resourceDirectory C:\Users\trodr\OneDrive\Escritorio\Hotel\app\src\main\resources
+[INFO] skip non existing resourceDirectory C:\Users\trodr\OneDrive\Escritorio\Hotel\app\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ HotelUniandes ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ HotelUniandes ---
+[INFO] skip non existing resourceDirectory C:\Users\trodr\OneDrive\Escritorio\Hotel\app\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ HotelUniandes ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.0.0:test (default-test) @ HotelUniandes ---
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ HotelUniandes ---
+[INFO] 
+[INFO] --- spring-boot:3.1.2:repackage (repackage) @ HotelUniandes ---
+[INFO] Replacing main artifact C:\Users\trodr\OneDrive\Escritorio\Hotel\app\target\HotelUniandes-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\trodr\OneDrive\Escritorio\Hotel\app\target\HotelUniandes-0.0.1-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.814 s
+[INFO] Finished at: 2023-10-01T20:12:41-05:00
+[INFO] ------------------------------------------------------------------------

@@ -15,7 +15,7 @@ public interface PlanConsumoRepository extends JpaRepository<PlanConsumo, Intege
     Collection<PlanConsumo> darplanConsumos();
 
     @Query(value = "SELECT * FROM planConsumo WHERE id = :id", nativeQuery = true)
-    PlanConsumo darplanConsumo(@Param("id") Long id);
+    PlanConsumo darplanConsumo(@Param("id") Integer id);
 
     @Modifying
     @Transactional

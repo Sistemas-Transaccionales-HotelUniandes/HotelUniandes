@@ -9,6 +9,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
+import uniandes.edu.co.app.model.Cliente;
+import uniandes.edu.co.app.model.PlanConsumo;
 import uniandes.edu.co.app.model.Reserva;
 
 public interface ReservaRepository extends JpaRepository<Reserva, Integer> {
@@ -26,12 +28,12 @@ public interface ReservaRepository extends JpaRepository<Reserva, Integer> {
     @Modifying
     @Transactional
     @Query(value = "UPDATE reserva SET numnoches = :numnoches, fechain = :fechain, estado = :estado, acompanantes = :acompanantes, planconsumo_id = :planconsumo_id, cliente_cliente_id = :cliente_id WHERE id = :id", nativeQuery = true)
-    void actualizarReserva(@Param("id") Integer id, @Param("numnoches") Integer numnoches, @Param("fechain") Date fechain, @Param("estado") String estado, @Param("acompanantes") Integer acompanantes, @Param("planconsumo_id") Integer id_planconsumo, @Param("cliente_id") Integer id_cliente);
+    void actualizarReserva(@Param("id") Integer id, @Param("numnoches") Integer numnoches, @Param("fechain") Date fechain, @Param("estado") String estado, @Param("acompanantes") Integer acompanantes, @Param("planconsumo_id") PlanConsumo planConsumo, @Param("cliente_id") Cliente cliente);
 
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO reserva (numnoches, fechain, estado, acompanantes, planconsumo:id, cliente_cliente_id) VALUES (:numnoches, :fechain, :estado, :acompanantes, :planconsumo_id, :cliente_id)", nativeQuery = true)
-    void insertarReserva(@Param("numnoches") Integer numnoches, @Param("fechain") Date fechain, @Param("estado") String estado, @Param("acompanantes") Integer acompanantes, @Param("planconsumo_id") Integer id_planconsumo, @Param("cliente_id") Integer id_cliente);
+    void insertarReserva(@Param("numnoches") Integer numnoches, @Param("fechain") Date fechain, @Param("estado") String estado, @Param("acompanantes") Integer acompanantes, @Param("planconsumo_id") PlanConsumo planConsumo, @Param("cliente_id") Cliente cliente);
 
     // Lo siguiente es para los check-in
 
@@ -43,6 +45,11 @@ public interface ReservaRepository extends JpaRepository<Reserva, Integer> {
     @Query(value = "UPDATE reserva SET estado = 'activa' WHERE id = :id", nativeQuery = true)
     void hacerCheckIn(@Param("id") Integer id);
 
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE reserva WHERE id = :id WHERE estado = :activa" , nativeQuery = true)
+    void eliminarCheckIn(@Param("id") Integer id, @Param("activa") String terminada);
+
     // Lo siguiente es para los check-out
 
     @Query(value = "SELECT * FROM reserva WHERE estado = 'terminada'", nativeQuery = true)
@@ -52,5 +59,12 @@ public interface ReservaRepository extends JpaRepository<Reserva, Integer> {
     @Transactional
     @Query(value = "UPDATE reserva SET estado = 'terminada' WHERE id = :id", nativeQuery = true)
     void hacerCheckOut(@Param("id") Integer id);
+
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE reserva WHERE id = :id WHERE estado = :terminada" , nativeQuery = true)
+    void eliminarCheckOut(@Param("id") Integer id, @Param("terminada") String terminada);
+
+
 
 }

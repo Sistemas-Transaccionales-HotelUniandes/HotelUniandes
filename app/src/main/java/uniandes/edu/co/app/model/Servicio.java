@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "servicio")
-public abstract class Servicio {
+public class Servicio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
