@@ -19,7 +19,7 @@ public interface ConsumoRepository extends JpaRepository<Consumo, Integer> {
 
     @Modifying
     @Transactional
-    @Query(value = "INSERT IntegeregerO consumo (cuenta_habitacion_id, servicio_id, cuenta_reserva_id) VALUES (:hab, :servicio, :reserva)", nativeQuery = true)
+    @Query(value = "INSERT INTO IntegeregerO consumo (cuenta_habitacion_id, servicio_id, cuenta_reserva_id) VALUES (:hab, :servicio, :reserva)", nativeQuery = true)
     void insertarConsumo(@Param("hab") Integer habitacion_id, @Param("servicio") Integer servicio_id, @Param("reserva") Integer reserva_id);
 
     @Modifying
