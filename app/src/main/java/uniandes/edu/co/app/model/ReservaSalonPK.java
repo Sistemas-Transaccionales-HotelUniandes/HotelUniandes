@@ -4,14 +4,18 @@ import java.io.Serializable;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinColumns;
 import jakarta.persistence.ManyToOne;
 
 @Embeddable
 public class ReservaSalonPK implements Serializable {
 
     @ManyToOne
-    @JoinColumn(name = "cuenta", referencedColumnName = "id")
-    private Cuenta cuenta;
+    @JoinColumns({
+        @JoinColumn(name = "cuenta_reserva", referencedColumnName = "reserva_id"),
+        @JoinColumn(name = "cuenta_habitacion", referencedColumnName = "habitacion_id")
+    })
+    private CuentaPK cuentaPK;
 
     @ManyToOne
     @JoinColumn(name = "salon", referencedColumnName = "id")
@@ -21,22 +25,22 @@ public class ReservaSalonPK implements Serializable {
         super();
     }
 
-    public ReservaSalonPK(Cuenta cuenta, Salon salon) {
+    public ReservaSalonPK(CuentaPK cuentaPK, Salon salon) {
         super();
-        this.cuenta = cuenta;
+        this.cuentaPK = cuentaPK;
         this.salon = salon;
     }
 
-    public Cuenta getCuenta() {
-        return this.cuenta;
+    public CuentaPK getCuenta() {
+        return this.cuentaPK;
     }
 
     public Salon getSalon() {
         return this.salon;
     }
 
-    public void setCuenta(Cuenta cuenta) {
-        this.cuenta = cuenta;
+    public void setCuenta(CuentaPK cuentaPK) {
+        this.cuentaPK = cuentaPK;
     }
 
     public void setSalon(Salon salon) {

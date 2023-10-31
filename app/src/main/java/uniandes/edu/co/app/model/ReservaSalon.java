@@ -18,16 +18,16 @@ public class ReservaSalon {
 
     @ManyToOne
     @JoinColumn(name = "cuenta", referencedColumnName = "reserva")
-    private Cuenta reserva;
+    private Cuenta reserva; // TODO esto es la fk de reserva, no deberia ser una cuenta
 
     public ReservaSalon() {;}
 
-    public ReservaSalon(Cuenta cuenta, Salon salon, String horaIn, String dia, Integer duracion) {
-        this.id = new ReservaSalonPK(cuenta, salon);
+    public ReservaSalon(CuentaPK cuentaPK, Salon salon, String horaIn, String dia, Integer duracion) {
+        this.id = new ReservaSalonPK(cuentaPK, salon);
         this.horaIn = horaIn;
         this.dia = dia;
         this.duracion = duracion;
-        this.reserva = cuenta;
+        this.reserva = cuentaPK;
     }
 
     public ReservaSalonPK getId() {
@@ -69,6 +69,5 @@ public class ReservaSalon {
     public void setCuentaReserva(Cuenta reserva) {
         this.reserva = reserva;
     }
-    
-    
+
 }
