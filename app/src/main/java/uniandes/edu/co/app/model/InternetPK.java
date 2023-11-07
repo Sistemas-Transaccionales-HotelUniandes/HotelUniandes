@@ -2,14 +2,13 @@ package uniandes.edu.co.app.model;
 import java.io.Serializable;
 
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.EmbeddedId;
+
 
 @Embeddable
 public class InternetPK implements Serializable{
 
-    @OneToOne
-    @JoinColumn(name = "servicio", referencedColumnName = "id")
+    @EmbeddedId
     private Servicio servicio_id;
 
     public InternetPK() {
