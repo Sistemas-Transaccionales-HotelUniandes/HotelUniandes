@@ -11,50 +11,50 @@ import jakarta.persistence.Table;
 public class Consumo {
 
     @EmbeddedId
-    private ConsumoPk id;
+    private ConsumoPk pk;
 
     @ManyToOne
-    @JoinColumn(name = "cuenta", referencedColumnName = "reserva")
-    private Cuenta reserva;
+    @JoinColumn(name = "cuenta", referencedColumnName = "pk")
+    private CuentaPK cuenta_reserva_id;
 
 
     public Consumo() {;}
 
-    public Consumo(Cuenta cuenta, Servicio servicio) {
-        this.id = new ConsumoPk(servicio, cuenta);
-        this.reserva = cuenta;
+    public Consumo(CuentaPK cuenta, Servicio servicio) {
+        this.pk = new ConsumoPk(servicio, cuenta);
+        this.cuenta_reserva_id = cuenta;
     }
     
     public ConsumoPk getId() {
-        return this.id;
+        return this.pk;
     }
 
     public void setId(ConsumoPk id) {
-        this.id = id;
+        this.pk = id;
     }
 
-    public Cuenta getCuentaReserva() {
-        return this.reserva;
+    public CuentaPK getCuentaReserva() {
+        return this.cuenta_reserva_id;
     }
 
-    public void setCuentaReserva(Cuenta reserva) {
-        this.reserva = reserva;
+    public void setCuentaReserva(CuentaPK reserva) {
+        this.cuenta_reserva_id = reserva;
     }
 
     public Servicio getServicio() {
-        return this.id.getServicio();
+        return this.pk.getServicio();
     }
 
     public void setServicio(Servicio servicio) {
-        this.id.setServicio(servicio);
+        this.pk.setServicio(servicio);
     }
 
-    public Cuenta getCuenta() {
-        return this.id.getCuenta();
+    public CuentaPK getCuenta() {
+        return this.pk.getCuenta();
     }
 
-    public void setCuenta(Cuenta cuenta) {
-        this.id.setCuenta(cuenta);
+    public void setCuenta(CuentaPK cuenta) {
+        this.pk.setCuenta(cuenta);
     }
     
 

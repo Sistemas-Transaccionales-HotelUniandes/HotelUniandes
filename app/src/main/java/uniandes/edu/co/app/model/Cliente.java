@@ -14,11 +14,11 @@ public class Cliente{
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer cliente_id;
 
     @OneToOne
     @JoinColumn(name = "usuario", referencedColumnName = "id")
-    private Usuario usuario;
+    private Usuario usuario_id;
 
     /**
      * Default constructor for Cliente class.
@@ -31,7 +31,7 @@ public class Cliente{
      * @param id The ID of the client.
      */
     public Cliente(Usuario usuario) {
-        this.usuario = usuario;
+        this.usuario_id = usuario;
     }
 
     /**
@@ -39,7 +39,7 @@ public class Cliente{
      * @return The ID of the client.
      */
     public Integer getId() {
-        return this.id;
+        return this.cliente_id;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Cliente{
      * @return The user associated with the client.
      */
     public Usuario getUsuario() {
-        return this.usuario;
+        return this.usuario_id;
     }
 
     /**
@@ -55,7 +55,7 @@ public class Cliente{
      * @param id The ID of the client.
      */
     public void setId(Integer id) {
-        this.id = id;
+        this.cliente_id = id;
     }
 
     /**
@@ -63,6 +63,6 @@ public class Cliente{
      * @param usuario The user associated with the client.
      */
     public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+        this.usuario_id = usuario;
     }
 }

@@ -40,7 +40,7 @@ public class ConsumoController {
 
     @PostMapping("/consumo/crear/submit")
     public String consumoSubmit(@ModelAttribute Consumo consumo, Model model) {
-        consumoRepository.insertarConsumo(consumo.getCuenta().getId().getHabitacion().getId(), consumo.getServicio().getId(), consumo.getCuentaReserva().getId().getReserva().getId());
+        consumoRepository.insertarConsumo(consumo.getCuenta().getHabitacion().getId(),  consumo.getServicio().getId(), consumo.getCuentaReserva().getReserva().getId());
         return "redirect:/consumo";
     }
 
@@ -56,7 +56,7 @@ public class ConsumoController {
 
     @PostMapping("/consumo/editar/submit")
     public String consumoEditarSubmit(@ModelAttribute Consumo consumo, @PathVariable("id") Integer id, @PathVariable("servicio") Integer servicio) {
-        consumoRepository.actualizarConsumo(id, servicio, consumo.getCuenta().getId().getHabitacion().getId(), consumo.getServicio().getId(), consumo.getCuentaReserva().getId().getReserva().getId());
+        consumoRepository.actualizarConsumo(id, servicio,consumo.getCuenta().getHabitacion().getId(),  consumo.getServicio().getId(), consumo.getCuentaReserva().getReserva().getId());
         return "redirect:/consumo";
     }
 

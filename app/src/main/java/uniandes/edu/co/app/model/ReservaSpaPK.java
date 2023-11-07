@@ -10,37 +10,37 @@ import jakarta.persistence.ManyToOne;
 public class ReservaSpaPK implements Serializable{
 
     @ManyToOne
-    @JoinColumn(name = "cuenta", referencedColumnName = "id")
-    private Cuenta cuenta;
+    @JoinColumn(name = "cuenta", referencedColumnName = "pk")
+    private CuentaPK cuenta_habitacion_id;
 
     @ManyToOne
     @JoinColumn(name = "spa", referencedColumnName = "id")
-    private Spa spa;
+    private Spa spa_id;
     
     public ReservaSpaPK() {
         super();
     }
 
-    public ReservaSpaPK(Cuenta cuenta, Spa spa) {
+    public ReservaSpaPK(CuentaPK cuenta, Spa spa) {
         super();
-        this.cuenta = cuenta;
-        this.spa = spa;
+        this.cuenta_habitacion_id = cuenta;
+        this.spa_id = spa;
     }
 
-    public Cuenta getCuenta() {
-        return this.cuenta;
+    public CuentaPK getCuenta() {
+        return this.cuenta_habitacion_id;
     }
 
     public Spa getSpa() {
-        return this.spa;
+        return this.spa_id;
     }
 
-    public void setCuenta(Cuenta cuenta) {
-        this.cuenta = cuenta;
+    public void setCuenta(CuentaPK cuenta) {
+        this.cuenta_habitacion_id = cuenta;
     }
 
     public void setSpa(Spa spa) {
-        this.spa = spa;
+        this.spa_id = spa;
     }
 
 }

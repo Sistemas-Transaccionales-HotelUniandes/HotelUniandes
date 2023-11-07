@@ -14,7 +14,7 @@ public class Tienda extends Servicio{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer tienda_id;
 
     @OneToOne
     @JoinColumn(name = "servicio", referencedColumnName = "id")
@@ -30,7 +30,7 @@ public class Tienda extends Servicio{
     }
 
     public Integer getId() {
-        return this.id;
+        return this.tienda_id;
     }
 
     public Servicio getServicio() {
@@ -42,7 +42,7 @@ public class Tienda extends Servicio{
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.tienda_id = id;
     }
 
     public void setServicio(Servicio servicio) {

@@ -9,29 +9,29 @@ import jakarta.persistence.Table;
 public class Piscina extends Servicio{
 
     @EmbeddedId
-    private PiscinaPK id;
+    private PiscinaPK pk;
 
     private Integer profundidad;
     private Integer capacidad;
-    private String horaIn;
-    private String horaFin;
+    private String horainicio;
+    private String horafin;
 
     public Piscina() {;}
 
     public Piscina(Servicio servicio, Integer profundidad, Integer capacidad, String horaIn, String horaFin) {
-        this.id = new PiscinaPK(servicio);
+        this.pk = new PiscinaPK(servicio);
         this.profundidad = profundidad;
         this.capacidad = capacidad;
-        this.horaIn = horaIn;
-        this.horaFin = horaFin;
+        this.horainicio = horaIn;
+        this.horafin = horaFin;
     }
 
     public PiscinaPK getIdPiscina() {
-        return this.id;
+        return this.pk;
     }
 
     public void setIdPiscina(PiscinaPK id) {
-        this.id = id;
+        this.pk = id;
     }
 
     public Integer getProfundidad() {
@@ -51,19 +51,19 @@ public class Piscina extends Servicio{
     }
 
     public String getHoraIn() {
-        return this.horaIn;
+        return this.horainicio;
     }
 
     public void setHoraIn(String horaIn) {
-        this.horaIn = horaIn;
+        this.horainicio = horaIn;
     }
 
     public String getHoraFin() {
-        return this.horaFin;
+        return this.horafin;
     }
 
     public void setHoraFin(String horaFin) {
-        this.horaFin = horaFin;
+        this.horafin = horaFin;
     }
 
 

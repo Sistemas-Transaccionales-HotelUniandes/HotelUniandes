@@ -10,36 +10,36 @@ public class ConsumoPk implements Serializable{
 
     @ManyToOne
     @JoinColumn(name = "servicio", referencedColumnName = "id")
-    private Servicio servicio;
+    private Servicio servicio_id;
 
     @ManyToOne
-    @JoinColumn(name = "cuenta", referencedColumnName = "id")
-    private Cuenta cuenta;
+    @JoinColumn(name = "cuenta", referencedColumnName = "pk")
+    private CuentaPK cuenta_Habitacion_id;
 
     public ConsumoPk() {
         super();
     }
 
-    public ConsumoPk(Servicio servicio, Cuenta cuenta) {
+    public ConsumoPk(Servicio servicio, CuentaPK cuenta) {
         super();
-        this.servicio = servicio;
-        this.cuenta = cuenta;
+        this.servicio_id = servicio;
+        this.cuenta_Habitacion_id = cuenta;
     }
 
     public Servicio getServicio() {
-        return this.servicio;
+        return this.servicio_id;
     }
 
     public void setServicio(Servicio servicio) {
-        this.servicio = servicio;
+        this.servicio_id = servicio;
     }
 
-    public Cuenta getCuenta() {
-        return this.cuenta;
+    public CuentaPK getCuenta() {
+        return this.cuenta_Habitacion_id;
     }
 
-    public void setCuenta(Cuenta cuenta) {
-        this.cuenta = cuenta;
+    public void setCuenta(CuentaPK cuenta) {
+        this.cuenta_Habitacion_id = cuenta;
     }
 
 

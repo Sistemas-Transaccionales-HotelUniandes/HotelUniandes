@@ -21,21 +21,21 @@ public class Usuario {
     private Integer id;
     private String nombre;
     private String email;
-    private String tipoDocumento ;
+    private String tipodocumento;
     private String documento;
 
     @ManyToOne
     @JoinColumn(name = "tipoUsuario", referencedColumnName = "id")
-    private TipoUsuario tipoUsuario;
+    private TipoUsuario tipousuario_id;
 
     public Usuario() {;}
 
     public Usuario(String nombre, String email, String tipoDocumento, String documento, TipoUsuario tipoUsuario) {
         this.nombre = nombre;
         this.email = email;
-        this.tipoDocumento = tipoDocumento;
+        this.tipodocumento = tipoDocumento;
         this.documento = documento;
-        this.tipoUsuario = tipoUsuario;
+        this.tipousuario_id = tipoUsuario;
     }
 
 
@@ -52,7 +52,7 @@ public class Usuario {
     }
 
     public String getTipoDocumento() {
-        return this.tipoDocumento;
+        return this.tipodocumento;
     }
 
     public String getDocumento() {
@@ -60,7 +60,7 @@ public class Usuario {
     }
 
     public TipoUsuario getTipoUsuario() {
-        return this.tipoUsuario;
+        return this.tipousuario_id;
     }
 
     public void setId(Integer id) {
@@ -85,7 +85,7 @@ public class Usuario {
         if (tipoDocumento == null || tipoDocumento.trim().isEmpty()) {
             throw new IllegalArgumentException("El tipo de documento no puede ser nulo o vacío");
         }
-        this.tipoDocumento = tipoDocumento;
+        this.tipodocumento = tipoDocumento;
     }
 
     public void setDocumento(String documento) {
@@ -99,7 +99,7 @@ public class Usuario {
         if (tipoUsuario == null) {
             throw new IllegalArgumentException("El tipo de usuario no puede ser nulo");
         }
-        this.tipoUsuario = tipoUsuario;
+        this.tipousuario_id = tipoUsuario;
     }
 
     @Override

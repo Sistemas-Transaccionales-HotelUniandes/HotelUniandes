@@ -10,7 +10,7 @@ public class PiscinaPK implements Serializable{
 
     @OneToOne
     @JoinColumn(name = "servicio", referencedColumnName = "id")
-    private Servicio servicio;
+    private Servicio servicio_id;
 
     public PiscinaPK() {
         super();
@@ -18,15 +18,15 @@ public class PiscinaPK implements Serializable{
 
     public PiscinaPK(Servicio servicio) {
         super();
-        this.servicio = servicio;
+        this.servicio_id = servicio;
     }
 
     public Servicio getServicio() {
-        return this.servicio;
+        return this.servicio_id;
     }
 
     public void setServicio(Servicio servicio) {
-        this.servicio = servicio;
+        this.servicio_id = servicio;
     }
 
     

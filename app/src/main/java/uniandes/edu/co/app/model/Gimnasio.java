@@ -9,37 +9,37 @@ import jakarta.persistence.Table;
 public class Gimnasio extends Servicio{
 
     @EmbeddedId
-    private GimnasioPK id;
+    private GimnasioPK pk;
 
-    private Integer numMaquinas;
+    private Integer nummaquinas;
     private Integer capacidad;
-    private String horaIn;
-    private String horaFin;
+    private String horainicio;
+    private String horafin;
 
     public Gimnasio() {;}
 
     public Gimnasio(Servicio servicio, Integer numMaquinas, Integer capacidad, String horaIn, String horaFin) {
-        this.id = new GimnasioPK(servicio);
-        this.numMaquinas = numMaquinas;
+        this.pk = new GimnasioPK(servicio);
+        this.nummaquinas = numMaquinas;
         this.capacidad = capacidad;
-        this.horaIn = horaIn;
-        this.horaFin = horaFin;
+        this.horainicio = horaIn;
+        this.horafin = horaFin;
     }
 
     public GimnasioPK getIdPiscina() {
-        return this.id;
+        return this.pk;
     }
 
     public void setIdPiscina(GimnasioPK id) {
-        this.id = id;
+        this.pk = id;
     }
 
     public Integer getnumMaquinas() {
-        return this.numMaquinas;
+        return this.nummaquinas;
     }
 
     public void setnumMaquinas(Integer numMaquinas) {
-        this.numMaquinas = numMaquinas;
+        this.nummaquinas = numMaquinas;
     }
 
     public Integer getCapacidad() {
@@ -51,19 +51,19 @@ public class Gimnasio extends Servicio{
     }
 
     public String getHoraIn() {
-        return this.horaIn;
+        return this.horainicio;
     }
 
     public void setHoraIn(String horaIn) {
-        this.horaIn = horaIn;
+        this.horainicio = horaIn;
     }
 
     public String getHoraFin() {
-        return this.horaFin;
+        return this.horafin;
     }
 
     public void setHoraFin(String horaFin) {
-        this.horaFin = horaFin;
+        this.horafin = horaFin;
     }
 
 

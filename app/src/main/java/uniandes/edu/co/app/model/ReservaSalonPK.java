@@ -4,17 +4,13 @@ import java.io.Serializable;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinColumns;
 import jakarta.persistence.ManyToOne;
 
 @Embeddable
 public class ReservaSalonPK implements Serializable {
 
     @ManyToOne
-    @JoinColumns({
-        @JoinColumn(name = "cuenta_reserva", referencedColumnName = "reserva_id"),
-        @JoinColumn(name = "cuenta_habitacion", referencedColumnName = "habitacion_id")
-    })
+    @JoinColumn(name = "cuenta", referencedColumnName = "pk")
     private CuentaPK cuentaPK;
 
     @ManyToOne

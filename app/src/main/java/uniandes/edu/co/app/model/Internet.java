@@ -9,23 +9,23 @@ import jakarta.persistence.Table;
 public class Internet extends Servicio{
 
     @EmbeddedId
-    private InternetPK id;
+    private InternetPK pk;
     private Integer capacidad;
 
 
     public Internet() {;}
 
     public Internet(Servicio servicio, Integer capacidad) {
-        this.id = new InternetPK(servicio);
+        this.pk = new InternetPK(servicio);
         this.capacidad = capacidad;
     }
 
     public InternetPK getIdInternet() {
-        return this.id;
+        return this.pk;
     }
 
     public void setIdInternet(InternetPK id) {
-        this.id = id;
+        this.pk = id;
     }
 
     public Integer getCapacidad() {
