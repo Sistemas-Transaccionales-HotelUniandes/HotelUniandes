@@ -8,3 +8,5 @@ insert into CONSUMO (cuenta_habitacion_id, servicio_id, cuenta_reserva_id, fecha
 insert into CONSUMO (cuenta_habitacion_id, servicio_id, cuenta_reserva_id, fecha) values (956, 403, 8, '16/12/2024');
 insert into CONSUMO (cuenta_habitacion_id, servicio_id, cuenta_reserva_id, fecha) values (709, 697, 9, '1/10/2024');
 insert into CONSUMO (cuenta_habitacion_id, servicio_id, cuenta_reserva_id, fecha) values (812, 162, 10, '20/1/2024');
+insert into CONSUMO (cuenta_habitacion_id, servicio_id, cuenta_reserva_id, fecha) values (709, 700, 9, '1/10/2024'); -- esta linea se inserto para probar el req 5
+insert into CONSUMO (cuenta_habitacion_id, servicio_id, cuenta_reserva_id, fecha) values (928, 700, 1, '26/1/2024'); -- este registro se crea pora el req 9
