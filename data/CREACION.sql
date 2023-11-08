@@ -161,7 +161,7 @@ ALTER TABLE reservasalon ADD CONSTRAINT reservasalon_pk PRIMARY KEY ( cuenta_hab
 CREATE TABLE ReservaSpa (
     costo NUMBER,
     horainicio VARCHAR2(255 BYTE),
-    dia VARCHAR2(dia BYTE),
+    dia DATE,
     spa_id NUMBER NOT NULL,
     cuenta_habitacion_id NUMBER NOT NULL,
     cuenta_reserva_id NUMBER NOT NULL
@@ -183,8 +183,7 @@ ALTER TABLE salon ADD CONSTRAINT salon_pk PRIMARY KEY ( id );
 
 CREATE TABLE servicio (
     id    NUMBER NOT NULL,
-    costo NUMBER,
-    nombre VARCHAR2(255 BYTE)
+    costo NUMBER
 );
 
 ALTER TABLE servicio ADD CONSTRAINT servicio_pk PRIMARY KEY ( id );
