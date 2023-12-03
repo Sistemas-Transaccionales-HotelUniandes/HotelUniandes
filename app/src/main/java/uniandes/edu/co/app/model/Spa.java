@@ -14,14 +14,14 @@ public class Spa {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String horaIn;
-    private String horaFin;
+    private String horainicio;
+    private String horafin;
 
     public Spa() {;}
 
     public Spa(String horaIn, String horaFin) {
-        this.horaIn = horaIn;
-        this.horaFin = horaFin;
+        this.horainicio = horaIn;
+        this.horafin = horaFin;
     }
 
     public Integer getId() {
@@ -29,19 +29,19 @@ public class Spa {
     }
 
     public String getHoraIn() {
-        return this.horaIn;
+        return this.horainicio;
     }
 
     public String getHoraFin() {
-        return this.horaFin;
+        return this.horafin;
     }
 
     public void setHoraIn(String horaIn) {
-        this.horaIn = horaIn;
+        this.horainicio = horaIn;
     }
 
     public void setHoraFin(String horaFin) {
-        this.horaFin = horaFin;
+        this.horafin = horaFin;
     }
 
     public void setId(Integer id) {

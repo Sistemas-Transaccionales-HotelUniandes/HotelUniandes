@@ -17,28 +17,28 @@ public class Reserva {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private Date fechaIn;
-    private Integer numNoches;
+    private Date fechain;
+    private Integer numnoches;
     private String estado; // creada, activa, cancelada, terminada
     private Integer acompanantes;
 
     @OneToOne
     @JoinColumn(name = "cliente", referencedColumnName = "id")
-    private Cliente cliente;
+    private Cliente cliente_cliente_id;
 
     @ManyToOne
     @JoinColumn(name = "planConsumo", referencedColumnName = "id")
-    private PlanConsumo planConsumo;
+    private PlanConsumo planconsumo_id;
 
     public Reserva() {;}
 
     public Reserva(Date fechaIn, Integer numNoches, String estado, Integer acompanantes, Cliente cliente, PlanConsumo planConsumo) {
-        this.fechaIn = fechaIn;
-        this.numNoches = numNoches;
+        this.fechain = fechaIn;
+        this.numnoches = numNoches;
         this.estado = estado;
         this.acompanantes = acompanantes;
-        this.cliente = cliente;
-        this.planConsumo = planConsumo;
+        this.cliente_cliente_id = cliente;
+        this.planconsumo_id = planConsumo;
     }
 
     public Integer getId() {
@@ -46,11 +46,11 @@ public class Reserva {
     }
 
     public Date getFechaIn() {
-        return this.fechaIn;
+        return this.fechain;
     }
 
     public Integer getNumNoches() {
-        return this.numNoches;
+        return this.numnoches;
     }
 
     public String getEstado() {
@@ -62,11 +62,11 @@ public class Reserva {
     }
 
     public Cliente getCliente() {
-        return this.cliente;
+        return this.cliente_cliente_id;
     }
 
     public PlanConsumo getPlanConsumo() {
-        return this.planConsumo;
+        return this.planconsumo_id;
     }
 
     public void setId(Integer id) {
@@ -74,11 +74,11 @@ public class Reserva {
     }
 
     public void setFechaIn(Date fechaIn) {
-        this.fechaIn = fechaIn;
+        this.fechain = fechaIn;
     }
 
     public void setNumNoches(Integer numNoches) {
-        this.numNoches = numNoches;
+        this.numnoches = numNoches;
     }
 
     public void setEstado(String estado) {
@@ -90,11 +90,11 @@ public class Reserva {
     }
 
     public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
+        this.cliente_cliente_id = cliente;
     }
 
     public void setPlanConsumo(PlanConsumo planConsumo) {
-        this.planConsumo = planConsumo;
+        this.planconsumo_id = planConsumo;
     }
 
 

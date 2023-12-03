@@ -18,13 +18,13 @@ public class Habitacion {
 
     @ManyToOne
     @JoinColumn(name = "tipoHabitacion", referencedColumnName = "id")
-    private TipoHabitacion tipoHabitacion;
+    private TipoHabitacion tipohabitacion_id;
 
     public Habitacion() {;}
 
     public Habitacion(TipoHabitacion tipoHabitacion) {
-        this.tipoHabitacion = tipoHabitacion;
- 
+        this.tipohabitacion_id = tipoHabitacion;
+
     }
 
     public Integer getId() {
@@ -32,7 +32,7 @@ public class Habitacion {
     }
 
     public TipoHabitacion getTipoHabitacion() {
-        return this.tipoHabitacion;
+        return this.tipohabitacion_id;  
     }
 
     public void setId(Integer id) {
@@ -40,7 +40,7 @@ public class Habitacion {
     }
 
     public void setTipoHabitacion(TipoHabitacion tipoHabitacion) {
-        this.tipoHabitacion = tipoHabitacion;
+        this.tipohabitacion_id = tipoHabitacion;
     }
 
 

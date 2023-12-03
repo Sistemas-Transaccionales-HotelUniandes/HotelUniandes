@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 public class Cuenta {
 
     @EmbeddedId
-    private CuentaPK id;
+    private CuentaPK pk;
 
     private String descripcion;
     private Double total;
@@ -17,13 +17,13 @@ public class Cuenta {
     public Cuenta() {;}
 
     public Cuenta(Reserva reserva, Habitacion habitacion, String descripcion, Double total) {
-        this.id = new CuentaPK(reserva, habitacion);
+        this.pk = new CuentaPK(reserva, habitacion);
         this.descripcion = descripcion;
         this.total = total;
     }
 
     public CuentaPK getId() {
-        return this.id;
+        return this.pk;
     }
 
     public String getDescripcion() {
@@ -43,7 +43,7 @@ public class Cuenta {
     }
 
     public void setId(CuentaPK id) {
-        this.id = id;
+        this.pk = id;
     }
 
 

@@ -11,11 +11,11 @@ public class CuentaPK implements Serializable{
 
     @ManyToOne
     @JoinColumn(name = "reserva", referencedColumnName = "id")
-    private Reserva reserva;
+    private Reserva reserva_id;
 
     @ManyToOne
     @JoinColumn(name = "habitacion", referencedColumnName = "id")
-    private Habitacion habitacion;
+    private Habitacion habitacion_id;
 
 
     public CuentaPK() {
@@ -24,24 +24,24 @@ public class CuentaPK implements Serializable{
 
     public CuentaPK(Reserva reserva, Habitacion habitacion) {
         super();
-        this.reserva = reserva;
-        this.habitacion = habitacion;
+        this.reserva_id = reserva;
+        this.habitacion_id = habitacion;
     }
 
     public Reserva getReserva() {
-        return this.reserva;
+        return this.reserva_id;
     }
 
     public Habitacion getHabitacion() {
-        return this.habitacion;
+        return this.habitacion_id;
     }
 
     public void setReserva(Reserva reserva) {
-        this.reserva = reserva;
+        this.reserva_id = reserva;
     }
 
     public void setHabitacion(Habitacion habitacion) {
-        this.habitacion = habitacion;
+        this.habitacion_id = habitacion;
     }
 
 

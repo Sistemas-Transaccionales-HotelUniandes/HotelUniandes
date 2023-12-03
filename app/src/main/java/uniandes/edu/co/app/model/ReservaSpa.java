@@ -11,28 +11,28 @@ import jakarta.persistence.Table;
 public class ReservaSpa {
 
     @EmbeddedId
-    private ReservaSpaPK id;
+    private ReservaSpaPK pk;
 
     private String horaIn;
     private String dia;
     private Double costo;
 
     @ManyToOne
-    @JoinColumn(name = "cuenta", referencedColumnName = "reserva")
-    private Cuenta reserva;
+    @JoinColumn(name = "cuenta", referencedColumnName = "pk")
+    private CuentaPK cuenta_reserva_id;
 
     public ReservaSpa() {;}
 
-    public ReservaSpa(Cuenta cuenta, Spa spa, String horaIn, String dia, Double costo) {
-        this.id = new ReservaSpaPK(cuenta, spa);
+    public ReservaSpa(CuentaPK cuenta, Spa spa, String horaIn, String dia, Double costo) {
+        this.pk = new ReservaSpaPK(cuenta, spa);
         this.horaIn = horaIn;
         this.dia = dia;
         this.costo = costo;
-        this.reserva = cuenta;
+        this.cuenta_reserva_id = cuenta;
     }
 
     public ReservaSpaPK getId() {
-        return this.id;
+        return this.pk;
     }
 
     public String getHoraIn() {
@@ -60,15 +60,15 @@ public class ReservaSpa {
     }
 
     public void setId(ReservaSpaPK id) {
-        this.id = id;
+        this.pk = id;
     }
 
-    public Cuenta getCuentaReserva() {
-        return this.reserva;
+    public CuentaPK getCuentaReserva() {
+        return this.cuenta_reserva_id;
     }
 
-    public void setCuentaReserva(Cuenta reserva) {
-        this.reserva = reserva;
+    public void setCuentaReserva(CuentaPK reserva) {
+        this.cuenta_reserva_id = reserva;
     }
     
     

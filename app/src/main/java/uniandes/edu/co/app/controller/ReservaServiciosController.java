@@ -80,25 +80,25 @@ public class ReservaServiciosController {
 
     @PostMapping("/reservaServicios/Spa/crear/submit")
     public String reservaSpaSubmit(@ModelAttribute ReservaSpa reserva, Model model) {
-        reservaSpaRepository.insertarreservaSpa(reserva.getId().getSpa().getId(), reserva.getId().getCuenta().getId().getHabitacion().getId(), reserva.getCosto(), reserva.getHoraIn(), reserva.getDia(),  reserva.getCuentaReserva().getId().getReserva().getId());
+        reservaSpaRepository.insertarreservaSpa(reserva.getId().getSpa().getId(), reserva.getId().getCuenta().getHabitacion().getId(), reserva.getCosto(), reserva.getHoraIn(), reserva.getDia(),  reserva.getCuentaReserva().getReserva().getId());
         return "redirect:/reservaServicios/Spa";
     }
 
     @PostMapping("/reservaServicios/Salon/crear/submit")
     public String reservaSalonSubmit(@ModelAttribute ReservaSalon reserva, Model model) {
-        reservaSalonRepository.insertarreservaSalon(reserva.getId().getSalon().getId(), reserva.getId().getCuenta().getId().getHabitacion().getId(), reserva.getHoraIn(), reserva.getDia(),  reserva.getDuracion(), reserva.getCuentaReserva().getId().getReserva().getId());
+        reservaSalonRepository.insertarreservaSalon(reserva.getId().getSalon().getId(), reserva.getId().getCuenta().getHabitacion().getId(), reserva.getHoraIn(), reserva.getDia(),  reserva.getDuracion(), reserva.getCuentaReserva().getReserva().getId());
         return "redirect:/reservaServicios/Salon";
     }
 
     @PostMapping("/reservaServicios/Spa/actualizar/submit")
     public String reservaSpaActualizar(@ModelAttribute ReservaSpa reserva, Model model) {
-        reservaSpaRepository.actualizarreservaSpa(reserva.getId().getSpa().getId(), reserva.getId().getCuenta().getId().getHabitacion().getId(), reserva.getCosto(), reserva.getHoraIn(), reserva.getDia(),  reserva.getCuentaReserva().getId().getReserva().getId());
+        reservaSpaRepository.actualizarreservaSpa(reserva.getId().getSpa().getId(), reserva.getId().getCuenta().getHabitacion().getId(), reserva.getCosto(), reserva.getHoraIn(), reserva.getDia(), reserva.getCuentaReserva().getReserva().getId());
         return "redirect:/reservaServicios/Spa";
     }
 
     @PostMapping("/reservaServicios/Salon/actualizar/submit")
     public String reservaSalonActualizar(@ModelAttribute ReservaSalon reserva, Model model) {
-        reservaSalonRepository.actualizarreservaSalon(reserva.getId().getSalon().getId(), reserva.getId().getCuenta().getId().getHabitacion().getId(), reserva.getHoraIn(), reserva.getDia(),  reserva.getDuracion(), reserva.getCuentaReserva().getId().getReserva().getId());
+        reservaSalonRepository.actualizarreservaSalon(reserva.getId().getSalon().getId(), reserva.getId().getCuenta().getHabitacion().getId(), reserva.getHoraIn(), reserva.getDia(),  reserva.getDuracion(), reserva.getCuentaReserva().getReserva().getId());
         return "redirect:/reservaServicios/Salon";
     }
 

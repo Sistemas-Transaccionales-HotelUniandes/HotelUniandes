@@ -17,15 +17,15 @@ public class Producto {
 
     @ManyToOne
     @JoinColumn(name = "spa", referencedColumnName = "id")
-    private Spa spa;
+    private Spa spa_id;
 
     @ManyToOne
-    @JoinColumn(name = "tienda", referencedColumnName = "id")
-    private Tienda tienda;
+    @JoinColumn(name = "tienda", referencedColumnName = "tienda_id")
+    private Tienda tienda_tienda_id;
 
     @ManyToOne
-    @JoinColumn(name = "local", referencedColumnName = "id")
-    private Local local;
+    @JoinColumn(name = "local", referencedColumnName = "local_id")
+    private Local local_local_id;
 
     private String nombre;
     private Double precio;
@@ -33,9 +33,9 @@ public class Producto {
     public Producto() {;}
 
     public Producto(Spa spa, Tienda tienda, Local local, String nombre, Double precio) {
-        this.spa = spa;
-        this.tienda = tienda;
-        this.local = local;
+        this.spa_id = spa;
+        this.tienda_tienda_id = tienda;
+        this.local_local_id = local;
         this.nombre = nombre;
         this.precio = precio;
     }
@@ -45,15 +45,15 @@ public class Producto {
     }
 
     public Spa getSpa() {
-        return this.spa;
+        return this.spa_id;
     }
 
     public Tienda getTienda() {
-        return this.tienda;
+        return this.tienda_tienda_id;
     }
 
     public Local getLocal() {
-        return this.local;
+        return this.local_local_id;
     }
 
     public String getNombre() {
@@ -65,15 +65,15 @@ public class Producto {
     }
 
     public void setSpa(Spa spa) {
-        this.spa = spa;
+        this.spa_id = spa;
     }
 
     public void setTienda(Tienda tienda) {
-        this.tienda = tienda;
+        this.tienda_tienda_id = tienda;
     }
 
     public void setLocal(Local local) {
-        this.local = local;
+        this.local_local_id = local;
     }
 
     public void setNombre(String nombre) {

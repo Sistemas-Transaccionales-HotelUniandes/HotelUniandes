@@ -16,7 +16,7 @@ public class Salon {
 
     private String tipo;
     private Integer capacidad;
-    private Double costo;
+    private Double costohora;
     private Double costoAdicional;
 
     public Salon() {;}
@@ -24,7 +24,7 @@ public class Salon {
     public Salon(String tipo, Integer capacidad, Double costo, Double costoAdicional) {
         this.tipo = tipo;
         this.capacidad = capacidad;
-        this.costo = costo;
+        this.costohora = costo;
         this.costoAdicional = costoAdicional;
     }
 
@@ -41,7 +41,7 @@ public class Salon {
     }
 
     public Double getCosto() {
-        return this.costo;
+        return this.costohora;
     }
 
     public Double getCostoAdicional() {
@@ -57,7 +57,7 @@ public class Salon {
     }
 
     public void setCosto(Double costo) {
-        this.costo = costo;
+        this.costohora = costo;
     }
 
     public void setCostoAdicional(Double costoAdicional) {
